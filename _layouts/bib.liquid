@@ -2,7 +2,7 @@
 ---
 <div class="row">
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
+    <div class="col col-sm-{% if entry.preview %}4{% else %}2{% endif %} abbr">
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {% assign venue_style = null %}
@@ -46,7 +46,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}{% if entry.preview %}col-sm-8{% else %}col-sm-10{% endif %}{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -103,11 +103,8 @@
       {% endfor %}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
-      {%- assign more_authors_hide = more_authors | append: ' more author' -%}
+      {%- assign more_authors_hide = '其余 ' | append: more_authors | append: ' 位作者' -%}
       {% if more_authors > 0 %}
-        {%- if more_authors > 1 -%}
-          {% assign more_authors_hide = more_authors_hide | append: 's' %}
-        {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
           {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
@@ -116,10 +113,10 @@
           {% endunless %}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        , and
+        {%- if more_authors > 0 -%}，以及{%- endif -%}
         <span
           class="more-authors"
-          title="click to view {{ more_authors_hide }}"
+          title="点击查看{{ more_authors_hide }}"
           onclick="
               var element = $(this);
               element.attr('title', '');
@@ -191,11 +188,8 @@
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
-          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
+          {%- if entry.award_name %}{{ entry.award_name }}{% else %}获奖{% endif -%}
         </a>
-      {% endif %}
-      {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
@@ -207,7 +201,7 @@
         <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="bibtex btn btn-sm z-depth-0" role="button">引用</a>
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
@@ -218,45 +212,45 @@
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">论文</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">论文</a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">补充材料</a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">补充材料</a>
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Video</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button">视频</a>
       {% elsif entry.video %}
-        <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+        <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">视频</a>
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
+        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">文章</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">代码</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">海报</a>
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">海报</a>
         {% endif %}
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">幻灯片</a>
         {% else %}
-          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">幻灯片</a>
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">网页</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
@@ -370,9 +364,45 @@
     {% endif %}
 
     {% if entry.abstract %}
-      <!-- Hidden abstract block -->
-      <div class="abstract hidden">
-        <p>{{ entry.abstract }}</p>
+      <div class="abstract publication-abstract">
+        {% if entry.abstract_zh %}
+          <div class="abstract-toolbar">
+            <span class="abstract-label">Abstract</span>
+            <button
+              type="button"
+              class="abstract-lang-toggle"
+              aria-label="切换摘要语言"
+              aria-pressed="false"
+              onclick="
+                var box = this.closest('.publication-abstract');
+                var en = box.querySelector('.abstract-copy-en');
+                var zh = box.querySelector('.abstract-copy-zh');
+                var showZh = zh.hasAttribute('hidden');
+                en.hidden = showZh;
+                zh.hidden = !showZh;
+                box.classList.toggle('is-zh', showZh);
+                this.setAttribute('aria-pressed', showZh ? 'true' : 'false');
+              "
+            >
+              <span class="lang-en-label">中文</span>
+              <span class="lang-zh-label">English</span>
+            </button>
+          </div>
+        {% endif %}
+        <div class="abstract-copy abstract-copy-en">
+          <p><strong>Abstract—</strong>{{ entry.abstract }}</p>
+          {% if entry.keywords %}
+            <p><strong>Index Terms—</strong>{{ entry.keywords }}.</p>
+          {% endif %}
+        </div>
+        {% if entry.abstract_zh %}
+          <div class="abstract-copy abstract-copy-zh" hidden>
+            <p><strong>摘要：</strong>{{ entry.abstract_zh }}</p>
+            {% if entry.keywords_zh %}
+              <p><strong>关键词：</strong>{{ entry.keywords_zh }}。</p>
+            {% endif %}
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 

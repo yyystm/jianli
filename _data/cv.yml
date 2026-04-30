@@ -1,189 +1,78 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: 杨玉垚
+  label: 南京师范大学电气工程及其自动化本科生
+  email: 21230213@njnu.edu.cn
+  location: 南京，中国
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: 南京师范大学电气工程及其自动化专业本科生，关注工程实践、智能系统和应用型研究。目前以第一作者身份完成一篇步态分析与 3D 打印传感鞋相关论文，处于一审返修阶段；另有一篇忆阻 Hopfield 神经网络与 FPGA 实现方向二作论文发表于 Electronics。
 
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  social_networks: []
 
   sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+    教育背景:
+      - institution: 南京师范大学
+        location: 南京
+        area: 电气工程及其自动化
+        studyType: 本科
+        start_date: 2022
+        end_date: 至今
         highlights:
-          - Description 1.
-          - Description 2.
+          - 本科阶段学习电气工程及其自动化相关课程。
+          - 可填写课程设计、科研训练或学生工作经历。
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+    论文与研究:
+      - company: 3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis
+        position: 第一作者
+        location: 南京师范大学
+        start_date: 2025
+        end_date: 至今
+        summary: 面向可穿戴步态分析，设计 3D 打印机械滤波传感鞋，并结合 ZUPT 物理模型、自监督残差网络与个性化少样本校准，实现实时步态参数估计。论文目前处于 IEEE Sensors Journal 一审返修阶段。
         highlights:
-          - Description 1.
-          - Description 2.
-
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+          - 参与传感鞋系统方案设计、实验流程、数据处理、算法验证与论文写作。
+          - 实验结果显示，嵌入式结构提升了步间信号一致性，个性化方法降低了步长和步态时相估计误差。
+      - company: Dynamic Analysis, FPGA Implementation and Application of Memristive Hopfield Neural Network with Synapse Crosstalk
+        position: 第二作者
+        start_date: 2025
+        end_date: 2025
+        summary: 论文发表于 Electronics, 14(12), 2464，DOI：10.3390/electronics14122464。围绕含突触串扰的忆阻 Hopfield 神经网络开展动力学分析、FPGA 实现与图像加密应用研究。
         highlights:
-          - Relativity
-          - Description 2.
+          - 作者：Minghao Shan, Yuyao Yang, Qianyi Tang, Xintong Hu and Fuhong Min。
+          - 研究验证了 MHNN 的复杂动力学行为，并通过模拟电路与 FPGA 实现验证模型可行性。
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+    竞赛与获奖:
+      - title: 比赛名称待补充
+        authors:
+          - 奖项 / 主办方待补充
+        date: 2025
+        awarder: 主办方待补充
+        summary: 说明比赛任务、团队角色、最终名次和个人贡献。
+
+    项目经历:
+      - name: 项目名称待补充
+        summary: 说明项目目标、技术栈、你负责的模块和最终成果。
         highlights:
-          - Description 1.
-          - Description 2.
+          - 技术栈待补充。
+          - GitHub、Demo 或文档链接待补充。
+        start_date: 2025
+        end_date: 2025
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+    技能:
+      - name: 编程与工具
+        level: 熟悉
+        icon: fa-solid fa-code
+        keywords: "Python, C/C++, Git, Linux"
+      - name: 研究与开发
+        level: 待补充
+        icon: fa-solid fa-flask
+        keywords: "数据处理, 实验记录, 模型训练, 系统实现"
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+    语言:
+      - name: 中文
+        summary: 母语
+      - name: 英语
+        summary: 水平待补充
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
+    兴趣方向:
+      - name: 智能系统与应用研究
         icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+        keywords: "机器学习, 计算机视觉, 工程实践, 应用开发"

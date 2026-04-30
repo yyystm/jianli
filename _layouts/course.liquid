@@ -5,19 +5,19 @@ layout: page
   {% if page.instructor or page.term or page.location or page.time %}
     <div class="course-info">
       {% if page.instructor %}
-        <p><strong>Instructor:</strong> {{ page.instructor }}</p>
+        <p><strong>授课教师：</strong> {{ page.instructor }}</p>
       {% endif %}
 
       {% if page.term %}
-        <p><strong>Term:</strong> {{ page.term }}</p>
+        <p><strong>学期：</strong> {{ page.term }}</p>
       {% endif %}
 
       {% if page.location %}
-        <p><strong>Location:</strong> {{ page.location }}</p>
+        <p><strong>地点：</strong> {{ page.location }}</p>
       {% endif %}
 
       {% if page.time %}
-        <p><strong>Time:</strong> {{ page.time }}</p>
+        <p><strong>时间：</strong> {{ page.time }}</p>
       {% endif %}
     </div>
   {% endif %}
@@ -25,14 +25,14 @@ layout: page
   {{ content }}
 
   {% if page.schedule %}
-    <h2>Schedule</h2>
+    <h2>课程安排</h2>
     <table class="table table-sm table-responsive">
       <thead>
         <tr>
-          <th>Week</th>
-          <th>Date</th>
-          <th>Topic</th>
-          <th>Materials</th>
+          <th>周次</th>
+          <th>日期</th>
+          <th>主题</th>
+          <th>材料</th>
         </tr>
       </thead>
       <tbody>

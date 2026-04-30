@@ -1,9 +1,9 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
-nav: true
-nav_order: 1
+title: 文章
+nav: false
+nav_order: 10
 pagination:
   enabled: true
   collection: posts
@@ -56,6 +56,9 @@ pagination:
   </div>
   {% endif %}
 
+<p>文章页面暂时保留为占位页。之后可以在这里放学习笔记、项目复盘或研究记录。</p>
+
+{% comment %}
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
 <br>
@@ -192,5 +195,6 @@ pagination:
 {% if page.pagination.enabled %}
 {% include pagination.liquid %}
 {% endif %}
+{% endcomment %}
 
 </div>

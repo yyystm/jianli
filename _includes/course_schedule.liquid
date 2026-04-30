@@ -11,21 +11,21 @@
     {% endif %}
 
     {% if course.instructor %}
-      <p><strong>Instructor:</strong> {{ course.instructor }}</p>
+      <p><strong>授课教师：</strong> {{ course.instructor }}</p>
     {% endif %}
 
     {% if course.term %}
-      <p><strong>Term:</strong> {{ course.term }}</p>
+      <p><strong>学期：</strong> {{ course.term }}</p>
     {% endif %}
 
     {% if course.schedule %}
       <table class="table table-sm table-responsive">
         <thead>
           <tr>
-            <th>Week</th>
-            <th>Date</th>
-            <th>Topic</th>
-            <th>Materials</th>
+            <th>周次</th>
+            <th>日期</th>
+            <th>主题</th>
+            <th>材料</th>
           </tr>
         </thead>
         <tbody>
@@ -65,7 +65,7 @@
         </tbody>
       </table>
     {% else %}
-      <p>No schedule available for this course.</p>
+      <p>暂无课程安排。</p>
     {% endif %}
   </div>
 {% endif %}

@@ -23,7 +23,7 @@
       class="newsletter-form-button"
       style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
     >
-      subscribe
+      订阅
     </button>
 
     <button
@@ -31,7 +31,7 @@
       class="newsletter-loading-button"
       style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
     >
-      Please wait...
+      请稍候...
     </button>
   </form>
 
@@ -39,14 +39,14 @@
     class="newsletter-success"
     style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
   >
-    <p class="newsletter-success-message">You're subscribed!</p>
+    <p class="newsletter-success-message">订阅成功！</p>
   </div>
 
   <div
     class="newsletter-error"
     style="justify-content: {% if include.left %}flex-start{% elsif include.right %}flex-end{% else %}center{% endif %}"
   >
-    <p class="newsletter-error-message">Oops! Something went wrong, please try again</p>
+    <p class="newsletter-error-message">出错了，请稍后重试。</p>
   </div>
 
   <button
@@ -55,7 +55,7 @@
     onmouseout='this.style.textDecoration="none"'
     onmouseover='this.style.textDecoration="underline"'
   >
-    &larr; Back
+    &larr; 返回
   </button>
 </div>
 

@@ -105,27 +105,27 @@ layout: default
     {% if content == '' %}
       <figure class="empty-review">
         {% if page.cover %}
-          <img class="empty-review-cover" alt="{{ page.title }} cover" src="{{ site.baseurl }}/{{ page.cover }}">
+          <img class="empty-review-cover" alt="{{ page.title }} 封面" src="{{ site.baseurl }}/{{ page.cover }}">
           <figcaption class="empty-review-caption">
-            Cover of <em>{{ page.title }}</em>
+            《{{ page.title }}》封面
           </figcaption>
         {% elsif page.olid %}
           <img
             class="empty-review-cover"
-            alt="{{ page.title }} cover"
+            alt="{{ page.title }} 封面"
             src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false"
           >
           <figcaption class="empty-review-caption">
-            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/olid/{{ page.olid }}">Open Library</a>.
+            Open Library 上的《{{ page.title }}》封面。
           </figcaption>
         {% elsif page.isbn %}
           <img
             class="empty-review-cover"
-            alt="{{ page.title }} cover"
+            alt="{{ page.title }} 封面"
             src="https://covers.openlibrary.org/b/isbn/{{ page.isbn }}-L.jpg?default=false"
           >
           <figcaption class="empty-review-caption">
-            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/isbn/{{ page.isbn }}">Open Library</a>.
+            Open Library 上的《{{ page.title }}》封面。
           </figcaption>
         {% endif %}
       </figure>
@@ -136,26 +136,26 @@ layout: default
     {% else %}
       <figure>
         {% if page.cover %}
-          <img alt="{{ page.title }} cover" src="{{ site.baseurl }}/{{ page.cover }}">
+          <img alt="{{ page.title }} 封面" src="{{ site.baseurl }}/{{ page.cover }}">
           <figcaption>
-            Cover of <em>{{ page.title }}</em>
+            《{{ page.title }}》封面
           </figcaption>
         {% elsif page.olid %}
-          <img alt="{{ page.title }} cover" src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false">
+          <img alt="{{ page.title }} 封面" src="https://covers.openlibrary.org/b/olid/{{ page.olid }}-L.jpg?default=false">
           <figcaption>
-            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/olid/{{ page.olid }}">Open Library</a>.
+            Open Library 上的《{{ page.title }}》封面。
           </figcaption>
         {% elsif page.isbn %}
-          <img alt="{{ page.title }} cover" src="https://covers.openlibrary.org/b/isbn/{{ page.isbn }}-L.jpg?default=false">
+          <img alt="{{ page.title }} 封面" src="https://covers.openlibrary.org/b/isbn/{{ page.isbn }}-L.jpg?default=false">
           <figcaption>
-            Cover of <em>{{ page.title }}</em> on the <a href="https://openlibrary.org/isbn/{{ page.isbn }}">Open Library</a>.
+            Open Library 上的《{{ page.title }}》封面。
           </figcaption>
         {% endif %}
       </figure>
       <br class="mobile-break" clear="right">
       <h4>
-        {% if page.start %} Start Date: {{ page.start | date: '%-d %B %Y' }}. {% endif %}
-        {% if page.end %} End Date: {{ page.end | date: '%-d %B %Y' }}. {% endif %}
+        {% if page.start %} 开始日期：{{ page.start | date: '%Y-%m-%d' }}。 {% endif %}
+        {% if page.end %} 结束日期：{{ page.end | date: '%Y-%m-%d' }}。 {% endif %}
       </h4>
       {{ content }}
     {% endif %}

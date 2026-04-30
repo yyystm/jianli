@@ -1,8 +1,8 @@
 ---
 layout: page
-title: submenus
-nav: true
-nav_order: 8
+title: 更多
+nav: false
+nav_order: 10
 dropdown: true
 children:
   - title: bookshelf
