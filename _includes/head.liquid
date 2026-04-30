@@ -79,7 +79,8 @@
 
 {% if site.enable_darkmode %}
   <!-- Dark Mode -->
-  <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+  {% assign theme_js_path = '/assets/js/theme.js' | relative_url | bust_file_cache %}
+  <script src="{{ theme_js_path }}{% if theme_js_path contains '?' %}&{% else %}?{% endif %}theme=light-default-v2"></script>
   <link
     defer
     rel="stylesheet"
