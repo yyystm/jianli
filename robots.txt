@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://yyystm.github.io/jianli/sitemap.xml
