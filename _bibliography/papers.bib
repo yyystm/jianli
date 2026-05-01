@@ -11,7 +11,9 @@
   abstract_zh = {可穿戴惯性测量单元（IMU）为步态分析提供了一种低成本方案。然而，穿戴导致的安装偏差和动态运动伪影常常削弱信号质量，传统算法也难以同时兼顾估计精度与实时性能。针对这些问题，本文提出了一种单体集成的 3D 打印传感鞋系统，并结合混合计算框架。中底中的 gyroid 晶格结构可作为机械低通滤波器，衰减绑带式传感器中常见的高频噪声。在硬件基础上，本文进一步提出两阶段混合算法，将基于物理模型的零速更新（ZUPT）方法与自监督残差网络协同结合。该架构先利用未标注数据预训练通用运动学特征，再进行少样本个性化校准。通过冻结预训练编码器，该框架能够避免在有限个体数据上发生灾难性过拟合，并在移动平台上实现稳健、低延迟的估计。此外，提取到的步态参数可用于计算对称性指数（SI），从而指导个性化 3D 打印。实验结果表明，嵌入式设计显著提升了跨步信号一致性，使 Pearson 相关系数（PCC）从 0.825 提高到 0.939。所提出的个性化方法将步长平均绝对误差（MAE）降低至 2.29 cm，并将支撑相和摆动相的时间误差分别限制在 21.30 ms 和 21.80 ms。最终，本文提供了一个面向实时步态监测和个性化鞋类设计反馈的低成本、高保真概念验证平台。},
   keywords   = {3D printing, few-shot calibration, gait analysis, inertial measurement unit, mechanical filtering, self-supervised, sensor integration, zero velocity update},
   keywords_zh = {3D 打印, 少样本校准, 步态分析, 惯性测量单元, 机械滤波, 自监督, 传感器集成, 零速更新},
+  note       = {通讯作者：施建平教授。},
   preview    = {gait-shoe-graphical-abstract.png},
+  website    = {https://eae.njnu.edu.cn/info/1051/1874.htm},
   selected   = {true}
 }
 
@@ -29,6 +31,7 @@
   abstract_zh = {在生物神经系统中，神经元之间通过突触连接传递信息。突触串扰是指神经元相邻突触之间的相互干扰或相互作用，这一现象广泛存在于生物神经网络中，并对神经系统功能和信息处理产生重要影响。为模拟并研究该现象，本文提出一种基于双曲正切函数的忆阻器模型，用于模拟神经元激活函数，并通过耦合两个忆阻器构建三神经元 HNN 模型，使其更接近生物神经网络的真实行为，为复杂神经动力学研究提供新的工具。本文利用 Lyapunov 指数分析和分岔图等方法研究了 MHNN 的复杂非线性动力学特性，并通过模拟电路仿真和 FPGA 实现验证了 MHNN 的可行性。此外，本文提出一种基于混沌系统和动态密钥生成机制的图像加密方法，展示了 MHNN 在实际应用中的潜力。直方图结果表明，该加密算法能够有效破坏原始图像特征；敏感性分析显示，当系统三个参数受到微小扰动时，密钥比特变化率接近 50%，说明系统对差分攻击具有较强抵抗能力。研究结果表明，该 MHNN 具有丰富的动力学行为和对初始条件的高敏感性，适用于类脑计算和信息安全等应用。},
   keywords   = {memristive Hopfield neural network, synaptic crosstalk, dynamic analysis, FPGA implementation, image encryption},
   keywords_zh = {忆阻 Hopfield 神经网络, 突触串扰, 动力学分析, FPGA 实现, 图像加密},
+  note       = {通讯作者：闵富红教授。},
   preview    = {memristive-hopfield-study-structure.png},
   selected   = {true}
 }

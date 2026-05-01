@@ -144,6 +144,44 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- Projects -->
+    {% assign homepage_projects = site.data.cv.cv.sections["项目经历"] %}
+    {% if homepage_projects %}
+      <div class="homepage-feature-title">
+        <div class="homepage-feature-kicker">Projects & Innovation</div>
+        <h2>
+          <a href="{{ '/cv/#项目经历' | relative_url }}" style="color: inherit">项目实践</a>
+        </h2>
+        <p>国家级大创项目与工程实现经历</p>
+      </div>
+      <div class="homepage-project-list">
+        {% for project in homepage_projects %}
+          <div class="homepage-project-entry">
+            <div class="d-flex flex-column flex-sm-row justify-content-between">
+              <h5 class="mb-1">
+                {% if project.url %}
+                  <a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a>
+                {% else %}
+                  {{ project.name }}
+                {% endif %}
+              </h5>
+              <span class="text-muted small">{{ project.start_date }}{% if project.end_date %} - {{ project.end_date }}{% endif %}</span>
+            </div>
+            {% if project.summary %}
+              <p class="mb-2">{{ project.summary }}</p>
+            {% endif %}
+            {% if project.highlights %}
+              <ul class="homepage-project-highlights">
+                {% for item in project.highlights %}
+                  <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">

@@ -110,6 +110,34 @@ body.sticky-bottom-footer {
   }
 }
 
+.homepage-project-list {
+  margin-bottom: 2rem;
+}
+
+.homepage-project-entry {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.1rem;
+
+  h5 {
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    margin-bottom: 0.55rem;
+  }
+}
+
+.homepage-project-highlights {
+  margin: 0;
+  padding-left: 1.15rem;
+
+  li + li {
+    margin-top: 0.35rem;
+  }
+}
+
 .homepage-feature-title {
   border-left: 5px solid var(--global-theme-color);
   margin: 2.25rem 0 1.1rem;
