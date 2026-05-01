@@ -4,7 +4,7 @@ cv:
   email: 21230213@njnu.edu.cn
   location: 南京，中国
   image: ""
-  summary: 南京师范大学电气工程及其自动化专业本科生，关注工程实践、智能系统和应用型研究。目前以第一作者身份完成一篇步态分析与 3D 打印传感鞋相关论文，处于一审返修阶段；另有一篇忆阻 Hopfield 神经网络与 FPGA 实现方向二作论文发表于 Electronics。
+  summary: 南京师范大学电气工程及其自动化专业本科生，关注工程实践、智能系统和应用型研究。本科阶段平均分 89.61，平均学分绩点 4.09。目前以第一作者身份完成一篇步态分析与 3D 打印传感鞋相关论文，处于一审返修阶段；另有一篇忆阻 Hopfield 神经网络与 FPGA 实现方向二作论文发表于 Electronics。
 
   social_networks: []
 
@@ -17,8 +17,20 @@ cv:
         start_date: 2022
         end_date: 至今
         highlights:
-          - 本科阶段学习电气工程及其自动化相关课程。
-          - 可填写课程设计、科研训练或学生工作经历。
+          - 本科阶段学习电气工程及其自动化相关课程，已修总学分 132。
+          - 课程基础覆盖电路、模拟电子、数字电子、信号与系统、自动控制、电机学、电力系统、微控制器等方向。
+
+    学业表现:
+      - label: 平均分
+        details: "89.61"
+      - label: 平均学分成绩
+        details: "90.91"
+      - label: 平均学分绩点
+        details: "4.09"
+      - label: 已修总学分
+        details: "132"
+      - label: 代表性高分课程
+        details: 高等数学Ⅰ（下）98、模拟电子技术基础 A 98、数字电子技术基础 A 97、信号与系统 A（双语）97、概率论与数理统计Ⅱ 96、工程数学 A 96、大学物理 B（上）96、微控制器原理及应用 A 94。
 
     论文与研究:
       - company: 3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis
