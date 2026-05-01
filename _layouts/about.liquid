@@ -64,6 +64,32 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Awards -->
+    {% assign homepage_awards = site.data.cv.cv.sections["竞赛与获奖"] %}
+    {% if homepage_awards %}
+      <h2>
+        <a href="{{ '/cv/' | relative_url }}" style="color: inherit">竞赛与获奖</a>
+      </h2>
+      <div class="awards-list">
+        {% for award in homepage_awards %}
+          <div class="award-entry mb-3">
+            <div class="d-flex flex-column flex-sm-row justify-content-between">
+              <h5 class="mb-1">{{ award.title }}</h5>
+              {% if award.date %}
+                <span class="text-muted small">{{ award.date | split: '-' | first }}</span>
+              {% endif %}
+            </div>
+            {% if award.awarder %}
+              <div class="text-muted small mb-1">{{ award.awarder }}</div>
+            {% endif %}
+            {% if award.summary %}
+              <p class="mb-0">{{ award.summary }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
