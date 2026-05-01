@@ -40,16 +40,15 @@ cv:
         location: 南京师范大学
         start_date: 2025
         end_date: 至今
-        summary: 面向可穿戴步态分析，设计 3D 打印机械滤波传感鞋，并结合 ZUPT 物理模型、自监督残差网络与个性化少样本校准，实现实时步态参数估计。论文目前处于 IEEE Sensors Journal 一审返修阶段，通讯作者为施建平教授。
+        summary: 面向可穿戴步态分析，设计 3D 打印机械滤波传感鞋，并结合 ZUPT 物理模型、自监督残差网络与个性化少样本校准，实现实时步态参数估计。论文目前处于 IEEE Sensors Journal 一审返修阶段，通讯作者为[施建平教授](https://eae.njnu.edu.cn/info/1051/1874.htm)。
         highlights:
           - 参与传感鞋系统方案设计、实验流程、数据处理、算法验证与论文写作。
           - 实验结果显示，嵌入式结构提升了步间信号一致性，个性化方法降低了步长和步态时相估计误差。
-          - 介绍网页：[南京师范大学电气与自动化工程学院新闻](https://eae.njnu.edu.cn/info/1051/1874.htm)。
       - company: Dynamic Analysis, FPGA Implementation and Application of Memristive Hopfield Neural Network with Synapse Crosstalk
         position: 第二作者
         start_date: 2025
         end_date: 2025
-        summary: 论文发表于 Electronics, 14(12), 2464，DOI：10.3390/electronics14122464。围绕含突触串扰的忆阻 Hopfield 神经网络开展动力学分析、FPGA 实现与图像加密应用研究，通讯作者为闵富红教授。
+        summary: 论文发表于 Electronics, 14(12), 2464，DOI：10.3390/electronics14122464。围绕含突触串扰的忆阻 Hopfield 神经网络开展动力学分析、FPGA 实现与图像加密应用研究，通讯作者为[闵富红教授](https://eae.njnu.edu.cn/info/1051/1866.htm)。
         highlights:
           - 作者：Minghao Shan, Yuyao Yang, Qianyi Tang, Xintong Hu and Fuhong Min。
           - 研究验证了 MHNN 的复杂动力学行为，并通过模拟电路与 FPGA 实现验证模型可行性。
@@ -70,9 +69,8 @@ cv:
       - name: 基于双阻态忆阻 Hopfield 神经网络的 FPGA 实现及应用
         summary: 国家级大学生创新创业训练计划项目，围绕双阻态忆阻 Hopfield 神经网络的建模、FPGA 部署与应用验证开展研究，我担任第二负责人。
         highlights:
-          - 指导老师：闵富红教授。
+          - 指导老师：[闵富红教授](https://eae.njnu.edu.cn/info/1051/1866.htm)。
           - 工作内容涵盖忆阻神经网络建模、FPGA 实现、系统验证与应用展示。
-          - 介绍网页：[南京师范大学电气与自动化工程学院新闻](https://eae.njnu.edu.cn/info/1051/1866.htm)。
         url: https://eae.njnu.edu.cn/info/1051/1866.htm
         start_date: 2025
         end_date: 2025

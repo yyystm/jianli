@@ -180,9 +180,21 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% if entry.corresponding_author %}
+      <div class="periodical">
+        通讯作者：
+        {% if entry.corresponding_author_url %}
+          <a href="{{ entry.corresponding_author_url }}" rel="external nofollow noopener" target="_blank">{{ entry.corresponding_author }}</a>
+        {% else %}
+          {{ entry.corresponding_author }}
+        {% endif %}
+        。
+      </div>
+    {% elsif entry.note %}
+      <div class="periodical">
+        {{ entry.note | strip }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -250,7 +262,9 @@
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">网页</a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">
+          {% if entry.website_label %}{{ entry.website_label }}{% else %}网页{% endif %}
+        </a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
