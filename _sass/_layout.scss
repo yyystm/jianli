@@ -91,6 +91,25 @@ body.sticky-bottom-footer {
   }
 }
 
+.award-certificate {
+  border: 1px solid var(--global-divider-color);
+  display: block;
+  margin-top: 0.85rem;
+  max-width: 360px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.awards-list {
+  .award-entry {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/

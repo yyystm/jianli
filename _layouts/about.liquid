@@ -122,6 +122,11 @@ layout: default
             {% if award.summary %}
               <p class="mb-0">{{ award.summary }}</p>
             {% endif %}
+            {% if award.image %}
+              <a class="spotlight award-certificate" href="{{ award.image | relative_url }}">
+                <img src="{{ award.image | relative_url | bust_file_cache }}" alt="{{ award.title }}证书">
+              </a>
+            {% endif %}
           </div>
         {% endfor %}
       </div>

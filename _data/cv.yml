@@ -54,10 +54,12 @@ cv:
         date: 2025
         awarder: 中国数学会
         summary: 在非数学 A 类竞赛中获一等奖，体现了较好的高等数学基础、逻辑推导能力和工程问题抽象能力。
+        image: /assets/img/awards/math-competition-award.jpg
       - title: 第十六届蓝桥杯全国软件和信息技术专业人才大赛全国总决赛单片机设计与开发大学组二等奖
         date: 2025-06-23
         awarder: 工业和信息化部人才交流中心、蓝桥杯大赛组委会
         summary: 在单片机设计与开发方向获得全国总决赛二等奖，侧重嵌入式系统设计、程序开发、硬件接口理解与现场问题解决能力。
+        image: /assets/img/awards/lanqiao-cup-award.jpg
 
     项目经历:
       - name: 项目名称待补充
