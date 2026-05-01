@@ -110,6 +110,43 @@ body.sticky-bottom-footer {
   }
 }
 
+.homepage-feature-title {
+  border-left: 5px solid var(--global-theme-color);
+  margin: 2.25rem 0 1.1rem;
+  padding: 0.15rem 0 0.15rem 1rem;
+
+  .homepage-feature-kicker {
+    color: var(--global-theme-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.15;
+    margin-bottom: 0.2rem;
+  }
+
+  p {
+    color: var(--global-text-color-light);
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .homepage-feature-title {
+    margin: 1.9rem 0 1rem;
+    padding-left: 0.85rem;
+
+    h2 {
+      font-size: 1.65rem;
+    }
+  }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/

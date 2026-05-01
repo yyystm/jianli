@@ -59,9 +59,13 @@ layout: default
     <!-- Academic record -->
     {% assign academic_record = site.data.cv.cv.sections["学业表现"] %}
     {% if academic_record %}
-      <h2>
-        <a href="{{ '/cv/#学业表现' | relative_url }}" style="color: inherit">学业成绩</a>
-      </h2>
+      <div class="homepage-feature-title">
+        <div class="homepage-feature-kicker">Academic Record</div>
+        <h2>
+          <a href="{{ '/cv/#学业表现' | relative_url }}" style="color: inherit">学业成绩</a>
+        </h2>
+        <p>课程成绩、绩点与完整成绩单入口</p>
+      </div>
       <div class="academic-record mb-4">
         <div class="academic-metrics">
           {% for item in academic_record %}
@@ -95,18 +99,26 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">论文与研究</a>
-      </h2>
+      <div class="homepage-feature-title">
+        <div class="homepage-feature-kicker">Publications & Research</div>
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">论文与研究</a>
+        </h2>
+        <p>代表性论文、摘要配图与研究方向展示</p>
+      </div>
       {% include selected_papers.liquid %}
     {% endif %}
 
     <!-- Awards -->
     {% assign homepage_awards = site.data.cv.cv.sections["竞赛与获奖"] %}
     {% if homepage_awards %}
-      <h2>
-        <a href="{{ '/cv/' | relative_url }}" style="color: inherit">竞赛与获奖</a>
-      </h2>
+      <div class="homepage-feature-title">
+        <div class="homepage-feature-kicker">Awards & Competitions</div>
+        <h2>
+          <a href="{{ '/cv/' | relative_url }}" style="color: inherit">竞赛与获奖</a>
+        </h2>
+        <p>全国竞赛获奖经历与证书原图展示</p>
+      </div>
       <div class="awards-list">
         {% for award in homepage_awards %}
           <div class="award-entry mb-3">
