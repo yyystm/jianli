@@ -44,6 +44,53 @@ body.sticky-bottom-footer {
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
 // See _layouts/default.liquid and _includes/projects.liquid for examples
 
+.academic-record {
+  .academic-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .academic-metric {
+    border-left: 3px solid var(--global-theme-color);
+    padding: 0.2rem 0 0.2rem 0.75rem;
+
+    strong {
+      display: block;
+      font-size: 1.2rem;
+      line-height: 1.25;
+    }
+  }
+
+  .academic-metric-label {
+    color: var(--global-text-color-light);
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .academic-course-list {
+    line-height: 1.75;
+  }
+}
+
+.transcript-gallery {
+  display: grid;
+  gap: 1rem;
+
+  .transcript-page {
+    border: 1px solid var(--global-divider-color);
+    display: block;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
 /******************************************************************************
  * Publications
  ******************************************************************************/

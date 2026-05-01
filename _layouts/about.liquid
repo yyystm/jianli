@@ -56,6 +56,46 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Academic record -->
+    {% assign academic_record = site.data.cv.cv.sections["学业表现"] %}
+    {% if academic_record %}
+      <h2>
+        <a href="{{ '/cv/#学业表现' | relative_url }}" style="color: inherit">学业成绩</a>
+      </h2>
+      <div class="academic-record mb-4">
+        <div class="academic-metrics">
+          {% for item in academic_record %}
+            {% unless item.label contains '代表性' %}
+              <div class="academic-metric">
+                <span class="academic-metric-label">{{ item.label }}</span>
+                <strong>{{ item.details }}</strong>
+              </div>
+            {% endunless %}
+          {% endfor %}
+        </div>
+        {% for item in academic_record %}
+          {% if item.label contains '代表性' %}
+            <p class="academic-course-list mb-3">
+              <strong>{{ item.label }}：</strong>{{ item.details }}
+            </p>
+          {% endif %}
+        {% endfor %}
+        <div class="mb-3">
+          <a class="btn btn-sm btn-outline-primary" href="{{ '/assets/pdf/academic-transcript-redacted.pdf' | relative_url }}" target="_blank" rel="noopener">
+            查看成绩单 PDF
+          </a>
+        </div>
+        <div class="spotlight-group transcript-gallery">
+          <a class="spotlight transcript-page" href="{{ '/assets/img/transcript/academic-transcript-page-1.png' | relative_url }}">
+            <img src="{{ '/assets/img/transcript/academic-transcript-page-1.png' | relative_url | bust_file_cache }}" alt="本科成绩单第 1 页">
+          </a>
+          <a class="spotlight transcript-page" href="{{ '/assets/img/transcript/academic-transcript-page-2.png' | relative_url }}">
+            <img src="{{ '/assets/img/transcript/academic-transcript-page-2.png' | relative_url | bust_file_cache }}" alt="本科成绩单第 2 页">
+          </a>
+        </div>
+      </div>
+    {% endif %}
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
