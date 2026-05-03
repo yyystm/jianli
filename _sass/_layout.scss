@@ -33,6 +33,28 @@ body.sticky-bottom-footer {
   max-width: v.$max-content-width;
 }
 
+.homepage-masthead {
+  border-bottom: 1px solid var(--global-divider-color);
+  margin-bottom: 1.4rem;
+  padding-bottom: 1rem;
+
+  .post-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.12;
+    margin-bottom: 0.45rem;
+  }
+
+  .desc {
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    max-width: 36rem;
+  }
+}
+
 // Profile
 .profile {
   margin-bottom: 1.5rem;
@@ -276,6 +298,19 @@ body.sticky-bottom-footer {
 }
 
 @media (max-width: 576px) {
+  .homepage-masthead {
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.85rem;
+
+    .post-title {
+      font-size: 2rem;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+    }
+  }
+
   .homepage-quickfacts {
     grid-template-columns: 1fr 1fr;
   }
