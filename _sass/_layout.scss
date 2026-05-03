@@ -166,13 +166,9 @@ body.sticky-bottom-footer {
 }
 
 .homepage-intro {
-  align-items: start;
   border-bottom: 1px solid var(--global-divider-color);
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.95fr);
-  margin-bottom: 1.4rem;
-  padding-bottom: 1.35rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .homepage-intro-copy {
@@ -193,7 +189,9 @@ body.sticky-bottom-footer {
   display: grid;
   gap: 0;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 1.35rem;
   overflow: hidden;
+  width: 100%;
 }
 
 .quickfact-item {
@@ -278,10 +276,6 @@ body.sticky-bottom-footer {
 }
 
 @media (max-width: 576px) {
-  .homepage-intro {
-    grid-template-columns: 1fr;
-  }
-
   .homepage-quickfacts {
     grid-template-columns: 1fr 1fr;
   }

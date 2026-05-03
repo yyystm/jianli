@@ -52,46 +52,46 @@ layout: default
       <div class="homepage-intro-copy">
         {{ content }}
       </div>
-
-      <div class="homepage-quickfacts">
-        {% if avg_score %}
-          <div class="quickfact-item">
-            <span class="quickfact-label">{{ avg_score.label }}</span>
-            <strong>{{ avg_score.details }}</strong>
-          </div>
-        {% endif %}
-        {% if avg_gpa %}
-          <div class="quickfact-item">
-            <span class="quickfact-label">{{ avg_gpa.label }}</span>
-            <strong>{{ avg_gpa.details }}</strong>
-          </div>
-        {% endif %}
-        {% if gpa_rank %}
-          <div class="quickfact-item">
-            <span class="quickfact-label">{{ gpa_rank.label }}</span>
-            <strong>{{ gpa_rank.details }}</strong>
-          </div>
-        {% endif %}
-        {% if earned_credits %}
-          <div class="quickfact-item">
-            <span class="quickfact-label">{{ earned_credits.label }}</span>
-            <strong>{{ earned_credits.details }}</strong>
-          </div>
-        {% endif %}
-        {% if homepage_research %}
-          <div class="quickfact-item">
-            <span class="quickfact-label">论文与研究</span>
-            <strong>{{ homepage_research.size }} 项</strong>
-          </div>
-        {% endif %}
-        {% if homepage_awards %}
-          <div class="quickfact-item">
-            <span class="quickfact-label">竞赛与获奖</span>
-            <strong>{{ homepage_awards.size }} 项</strong>
-          </div>
-        {% endif %}
-      </div>
     </section>
+
+    <div class="homepage-quickfacts">
+      {% if avg_score %}
+        <div class="quickfact-item">
+          <span class="quickfact-label">{{ avg_score.label }}</span>
+          <strong>{{ avg_score.details }}</strong>
+        </div>
+      {% endif %}
+      {% if avg_gpa %}
+        <div class="quickfact-item">
+          <span class="quickfact-label">{{ avg_gpa.label }}</span>
+          <strong>{{ avg_gpa.details }}</strong>
+        </div>
+      {% endif %}
+      {% if gpa_rank %}
+        <div class="quickfact-item">
+          <span class="quickfact-label">{{ gpa_rank.label }}</span>
+          <strong>{{ gpa_rank.details }}</strong>
+        </div>
+      {% endif %}
+      {% if earned_credits %}
+        <div class="quickfact-item">
+          <span class="quickfact-label">{{ earned_credits.label }}</span>
+          <strong>{{ earned_credits.details }}</strong>
+        </div>
+      {% endif %}
+      {% if homepage_research %}
+        <div class="quickfact-item">
+          <span class="quickfact-label">论文与研究</span>
+          <strong>{{ homepage_research.size }} 项</strong>
+        </div>
+      {% endif %}
+      {% if homepage_awards %}
+        <div class="quickfact-item">
+          <span class="quickfact-label">竞赛与获奖</span>
+          <strong>{{ homepage_awards.size }} 项</strong>
+        </div>
+      {% endif %}
+    </div>
 
     {% if homepage_interests %}
       <div class="homepage-focus-strip">
