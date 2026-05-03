@@ -15,6 +15,16 @@ layout: default
   </header>
 
   <article>
+    {% assign academic_record = site.data.cv.cv.sections["学业表现"] %}
+    {% assign homepage_research = site.data.cv.cv.sections["论文与研究"] %}
+    {% assign homepage_awards = site.data.cv.cv.sections["竞赛与获奖"] %}
+    {% assign homepage_projects = site.data.cv.cv.sections["项目经历"] %}
+    {% assign homepage_interests = site.data.cv.cv.sections["兴趣方向"] %}
+    {% assign avg_score = academic_record | where: "label", "平均学分成绩" | first %}
+    {% assign avg_gpa = academic_record | where: "label", "平均学分绩点" | first %}
+    {% assign gpa_rank = academic_record | where: "label", "绩点排名" | first %}
+    {% assign earned_credits = academic_record | where: "label", "已修总学分" | first %}
+
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
@@ -38,14 +48,71 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <section class="homepage-intro clearfix">
+      <div class="homepage-intro-copy">
+        {{ content }}
+      </div>
+
+      <div class="homepage-quickfacts">
+        {% if avg_score %}
+          <div class="quickfact-item">
+            <span class="quickfact-label">{{ avg_score.label }}</span>
+            <strong>{{ avg_score.details }}</strong>
+          </div>
+        {% endif %}
+        {% if avg_gpa %}
+          <div class="quickfact-item">
+            <span class="quickfact-label">{{ avg_gpa.label }}</span>
+            <strong>{{ avg_gpa.details }}</strong>
+          </div>
+        {% endif %}
+        {% if gpa_rank %}
+          <div class="quickfact-item">
+            <span class="quickfact-label">{{ gpa_rank.label }}</span>
+            <strong>{{ gpa_rank.details }}</strong>
+          </div>
+        {% endif %}
+        {% if earned_credits %}
+          <div class="quickfact-item">
+            <span class="quickfact-label">{{ earned_credits.label }}</span>
+            <strong>{{ earned_credits.details }}</strong>
+          </div>
+        {% endif %}
+        {% if homepage_research %}
+          <div class="quickfact-item">
+            <span class="quickfact-label">论文与研究</span>
+            <strong>{{ homepage_research.size }} 项</strong>
+          </div>
+        {% endif %}
+        {% if homepage_awards %}
+          <div class="quickfact-item">
+            <span class="quickfact-label">竞赛与获奖</span>
+            <strong>{{ homepage_awards.size }} 项</strong>
+          </div>
+        {% endif %}
+      </div>
+    </section>
+
+    {% if homepage_interests %}
+      <div class="homepage-focus-strip">
+        <span class="focus-strip-label">研究兴趣</span>
+        {% for interest in homepage_interests %}
+          {% assign keywords = interest.keywords | split: ',' %}
+          {% for keyword in keywords %}
+            <span class="focus-chip">{{ keyword | strip }}</span>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">最新动态</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="homepage-section homepage-section-news">
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">最新动态</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
@@ -57,129 +124,134 @@ layout: default
     {% endif %}
 
     <!-- Academic record -->
-    {% assign academic_record = site.data.cv.cv.sections["学业表现"] %}
     {% if academic_record %}
-      <div class="homepage-feature-title">
-        <div class="homepage-feature-kicker">Academic Record</div>
-        <h2>
-          <a href="{{ '/cv/#学业表现' | relative_url }}" style="color: inherit">学业成绩</a>
-        </h2>
-        <p>课程成绩、绩点与完整成绩单入口</p>
-      </div>
-      <div class="academic-record mb-4">
-        <div class="academic-metrics">
+      <section class="homepage-section">
+        <div class="homepage-feature-title">
+          <div class="homepage-feature-kicker">Academic Record</div>
+          <h2>
+            <a href="{{ '/cv/#学业表现' | relative_url }}" style="color: inherit">学业成绩</a>
+          </h2>
+          <p>课程成绩、绩点与完整成绩单入口</p>
+        </div>
+        <div class="academic-record mb-4">
+          <div class="academic-metrics">
+            {% for item in academic_record %}
+              {% unless item.label contains '代表性' %}
+                <div class="academic-metric">
+                  <span class="academic-metric-label">{{ item.label }}</span>
+                  <strong>{{ item.details }}</strong>
+                </div>
+              {% endunless %}
+            {% endfor %}
+          </div>
           {% for item in academic_record %}
-            {% unless item.label contains '代表性' %}
-              <div class="academic-metric">
-                <span class="academic-metric-label">{{ item.label }}</span>
-                <strong>{{ item.details }}</strong>
-              </div>
-            {% endunless %}
+            {% if item.label contains '代表性' %}
+              <p class="academic-course-list mb-3">
+                <strong>{{ item.label }}：</strong>{{ item.details }}
+              </p>
+            {% endif %}
           {% endfor %}
+          <div class="mb-3">
+            <a class="btn btn-sm btn-outline-primary" href="{{ '/assets/pdf/academic-transcript-redacted.pdf' | relative_url }}" target="_blank" rel="noopener">
+              查看成绩单 PDF
+            </a>
+          </div>
+          <div class="spotlight-group transcript-gallery">
+            <a class="spotlight transcript-page" href="{{ '/assets/img/transcript/academic-transcript-page-1.png' | relative_url }}">
+              <img src="{{ '/assets/img/transcript/academic-transcript-page-1.png' | relative_url | bust_file_cache }}" alt="本科成绩单第 1 页">
+            </a>
+          </div>
         </div>
-        {% for item in academic_record %}
-          {% if item.label contains '代表性' %}
-            <p class="academic-course-list mb-3">
-              <strong>{{ item.label }}：</strong>{{ item.details }}
-            </p>
-          {% endif %}
-        {% endfor %}
-        <div class="mb-3">
-          <a class="btn btn-sm btn-outline-primary" href="{{ '/assets/pdf/academic-transcript-redacted.pdf' | relative_url }}" target="_blank" rel="noopener">
-            查看成绩单 PDF
-          </a>
-        </div>
-        <div class="spotlight-group transcript-gallery">
-          <a class="spotlight transcript-page" href="{{ '/assets/img/transcript/academic-transcript-page-1.png' | relative_url }}">
-            <img src="{{ '/assets/img/transcript/academic-transcript-page-1.png' | relative_url | bust_file_cache }}" alt="本科成绩单第 1 页">
-          </a>
-        </div>
-      </div>
+      </section>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <div class="homepage-feature-title">
-        <div class="homepage-feature-kicker">Publications & Research</div>
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">论文与研究</a>
-        </h2>
-        <p>代表性论文、摘要配图与研究方向展示</p>
-      </div>
-      {% include selected_papers.liquid %}
+      <section class="homepage-section">
+        <div class="homepage-feature-title">
+          <div class="homepage-feature-kicker">Publications & Research</div>
+          <h2>
+            <a href="{{ '/publications/' | relative_url }}" style="color: inherit">论文与研究</a>
+          </h2>
+          <p>代表性论文、摘要配图与研究方向展示</p>
+        </div>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
 
     <!-- Awards -->
-    {% assign homepage_awards = site.data.cv.cv.sections["竞赛与获奖"] %}
     {% if homepage_awards %}
-      <div class="homepage-feature-title">
-        <div class="homepage-feature-kicker">Awards & Competitions</div>
-        <h2>
-          <a href="{{ '/cv/' | relative_url }}" style="color: inherit">竞赛与获奖</a>
-        </h2>
-        <p>全国竞赛获奖经历与证书原图展示</p>
-      </div>
-      <div class="awards-list">
-        {% for award in homepage_awards %}
-          <div class="award-entry mb-3">
-            <div class="d-flex flex-column flex-sm-row justify-content-between">
-              <h5 class="mb-1">{{ award.title }}</h5>
-              {% if award.date %}
-                <span class="text-muted small">{{ award.date | split: '-' | first }}</span>
+      <section class="homepage-section">
+        <div class="homepage-feature-title">
+          <div class="homepage-feature-kicker">Awards & Competitions</div>
+          <h2>
+            <a href="{{ '/cv/' | relative_url }}" style="color: inherit">竞赛与获奖</a>
+          </h2>
+          <p>全国竞赛获奖经历与证书原图展示</p>
+        </div>
+        <div class="awards-list">
+          {% for award in homepage_awards %}
+            <div class="award-entry mb-3">
+              <div class="d-flex flex-column flex-sm-row justify-content-between">
+                <h5 class="mb-1">{{ award.title }}</h5>
+                {% if award.date %}
+                  <span class="text-muted small">{{ award.date | split: '-' | first }}</span>
+                {% endif %}
+              </div>
+              {% if award.awarder %}
+                <div class="text-muted small mb-1">{{ award.awarder }}</div>
+              {% endif %}
+              {% if award.summary %}
+                <p class="mb-0">{{ award.summary }}</p>
+              {% endif %}
+              {% if award.image %}
+                <a class="spotlight award-certificate" href="{{ award.image | relative_url }}">
+                  <img src="{{ award.image | relative_url | bust_file_cache }}" alt="{{ award.title }}证书">
+                </a>
               {% endif %}
             </div>
-            {% if award.awarder %}
-              <div class="text-muted small mb-1">{{ award.awarder }}</div>
-            {% endif %}
-            {% if award.summary %}
-              <p class="mb-0">{{ award.summary }}</p>
-            {% endif %}
-            {% if award.image %}
-              <a class="spotlight award-certificate" href="{{ award.image | relative_url }}">
-                <img src="{{ award.image | relative_url | bust_file_cache }}" alt="{{ award.title }}证书">
-              </a>
-            {% endif %}
-          </div>
-        {% endfor %}
-      </div>
+          {% endfor %}
+        </div>
+      </section>
     {% endif %}
 
     <!-- Projects -->
-    {% assign homepage_projects = site.data.cv.cv.sections["项目经历"] %}
     {% if homepage_projects %}
-      <div class="homepage-feature-title">
-        <div class="homepage-feature-kicker">Projects & Innovation</div>
-        <h2>
-          <a href="{{ '/cv/#项目经历' | relative_url }}" style="color: inherit">项目实践</a>
-        </h2>
-        <p>国家级大创项目与工程实现经历</p>
-      </div>
-      <div class="homepage-project-list">
-        {% for project in homepage_projects %}
-          <div class="homepage-project-entry">
-            <div class="d-flex flex-column flex-sm-row justify-content-between">
-              <h5 class="mb-1">
-                {% if project.url %}
-                  <a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a>
-                {% else %}
-                  {{ project.name }}
-                {% endif %}
-              </h5>
-              <span class="text-muted small">{{ project.start_date }}{% if project.end_date %} - {{ project.end_date }}{% endif %}</span>
+      <section class="homepage-section">
+        <div class="homepage-feature-title">
+          <div class="homepage-feature-kicker">Projects & Innovation</div>
+          <h2>
+            <a href="{{ '/cv/#项目经历' | relative_url }}" style="color: inherit">项目实践</a>
+          </h2>
+          <p>国家级大创项目与工程实现经历</p>
+        </div>
+        <div class="homepage-project-list">
+          {% for project in homepage_projects %}
+            <div class="homepage-project-entry">
+              <div class="d-flex flex-column flex-sm-row justify-content-between">
+                <h5 class="mb-1">
+                  {% if project.url %}
+                    <a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.name }}</a>
+                  {% else %}
+                    {{ project.name }}
+                  {% endif %}
+                </h5>
+                <span class="text-muted small">{{ project.start_date }}{% if project.end_date %} - {{ project.end_date }}{% endif %}</span>
+              </div>
+              {% if project.summary %}
+                <p class="mb-2">{{ project.summary }}</p>
+              {% endif %}
+              {% if project.highlights %}
+                <ul class="homepage-project-highlights">
+                  {% for item in project.highlights %}
+                    <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
             </div>
-            {% if project.summary %}
-              <p class="mb-2">{{ project.summary }}</p>
-            {% endif %}
-            {% if project.highlights %}
-              <ul class="homepage-project-highlights">
-                {% for item in project.highlights %}
-                  <li>{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </div>
-        {% endfor %}
-      </div>
+          {% endfor %}
+        </div>
+      </section>
     {% endif %}
 
     <!-- Social -->

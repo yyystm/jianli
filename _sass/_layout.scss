@@ -35,8 +35,23 @@ body.sticky-bottom-footer {
 
 // Profile
 .profile {
+  margin-bottom: 1.5rem;
+
   img {
     width: 100%;
+  }
+
+  .more-info {
+    border-top: 1px solid var(--global-divider-color);
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-top: 0.9rem;
+    padding-top: 0.75rem;
+
+    p {
+      margin-bottom: 0.2rem;
+    }
   }
 }
 
@@ -45,21 +60,30 @@ body.sticky-bottom-footer {
 // See _layouts/default.liquid and _includes/projects.liquid for examples
 
 .academic-record {
+  background: color-mix(in srgb, var(--global-theme-color) 3%, var(--global-bg-color));
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 1rem 1rem 1.1rem;
+
   .academic-metrics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 0.75rem;
     margin-bottom: 1rem;
   }
 
   .academic-metric {
-    border-left: 3px solid var(--global-theme-color);
-    padding: 0.2rem 0 0.2rem 0.75rem;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    min-height: 88px;
+    padding: 0.75rem 0.85rem;
 
     strong {
       display: block;
-      font-size: 1.2rem;
+      font-size: 1.28rem;
       line-height: 1.25;
+      margin-top: 0.25rem;
     }
   }
 
@@ -106,7 +130,9 @@ body.sticky-bottom-footer {
 
 .awards-list {
   .award-entry {
+    border-bottom: 1px solid var(--global-divider-color);
     margin-bottom: 1.5rem !important;
+    padding-bottom: 1.2rem;
   }
 }
 
@@ -115,6 +141,7 @@ body.sticky-bottom-footer {
 }
 
 .homepage-project-entry {
+  background: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -138,14 +165,100 @@ body.sticky-bottom-footer {
   }
 }
 
+.homepage-intro {
+  align-items: start;
+  border-bottom: 1px solid var(--global-divider-color);
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.95fr);
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.35rem;
+}
+
+.homepage-intro-copy {
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 0.95rem;
+  }
+
+  p:first-child {
+    font-size: 1.08rem;
+  }
+}
+
+.homepage-quickfacts {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.quickfact-item {
+  background: var(--global-card-bg-color);
+  border-right: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  min-height: 88px;
+  padding: 0.9rem 0.95rem;
+
+  &:nth-child(2n) {
+    border-right: none;
+  }
+
+  strong {
+    display: block;
+    font-size: 1.18rem;
+    line-height: 1.25;
+    margin-top: 0.25rem;
+  }
+}
+
+.quickfact-label {
+  color: var(--global-text-color-light);
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.homepage-focus-strip {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0 0 1.75rem;
+}
+
+.focus-strip-label {
+  color: var(--global-text-color-light);
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-right: 0.15rem;
+}
+
+.focus-chip {
+  background: color-mix(in srgb, var(--global-theme-color) 8%, var(--global-bg-color));
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 20%, var(--global-divider-color));
+  border-radius: 999px;
+  font-size: 0.88rem;
+  padding: 0.28rem 0.7rem;
+}
+
+.homepage-section {
+  border-top: 1px solid var(--global-divider-color);
+  margin-top: 2rem;
+  padding-top: 0.3rem;
+}
+
 .homepage-feature-title {
-  border-left: 5px solid var(--global-theme-color);
-  margin: 2.25rem 0 1.1rem;
-  padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 4px solid var(--global-theme-color);
+  margin: 1.4rem 0 1.15rem;
+  padding: 0.1rem 0 0.1rem 0.95rem;
 
   .homepage-feature-kicker {
     color: var(--global-theme-color);
-    font-size: 0.78rem;
+    font-size: 0.74rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     margin-bottom: 0.2rem;
@@ -153,7 +266,7 @@ body.sticky-bottom-footer {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.82rem;
     line-height: 1.15;
     margin-bottom: 0.2rem;
   }
@@ -165,12 +278,20 @@ body.sticky-bottom-footer {
 }
 
 @media (max-width: 576px) {
+  .homepage-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-quickfacts {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .homepage-feature-title {
     margin: 1.9rem 0 1rem;
     padding-left: 0.85rem;
 
     h2 {
-      font-size: 1.65rem;
+      font-size: 1.52rem;
     }
   }
 }
