@@ -2,57 +2,31 @@
 layout: page
 title: 项目
 permalink: /projects/
-description: 竞赛、课程设计和个人项目的整理。
+description: 仅保留两项最能代表当前研究与工程能力的项目。
 nav: true
 nav_order: 2
-display_categories: [竞赛, 项目, 研究]
-horizontal: false
+horizontal: true
 ---
+
+目前项目页只保留两张代表性卡片。这个数量对你现在的阶段更合适：内容集中，信息密度高，也不会因为模板占位或较弱项目影响整体判断。
 
 <!-- pages/projects.md -->
 <div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
+{% assign selected_projects = site.projects | where: "featured_project", true | sort: "importance" %}
 
 {% if page.horizontal %}
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
+    {% for project in selected_projects %}
       {% include projects_horizontal.liquid %}
     {% endfor %}
     </div>
   </div>
-  {% else %}
+{% else %}
   <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
+    {% for project in selected_projects %}
       {% include projects.liquid %}
     {% endfor %}
   </div>
-  {% endif %}
 {% endif %}
 </div>
