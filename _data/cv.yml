@@ -4,7 +4,7 @@ cv:
   email: 21230213@njnu.edu.cn
   location: 南京，中国
   image: ""
-  summary: 南京师范大学电气工程及其自动化专业本科生，关注智能系统、嵌入式实现与应用型研究。当前平均学分成绩 90.91，平均学分绩点 4.09，绩点排名 8/261，已通过大学英语六级（452 分）。目前以第一作者身份完成一篇步态分析与 3D 打印传感鞋相关论文，处于一审返修阶段；另有一篇忆阻 Hopfield 神经网络与 FPGA 实现方向二作论文发表于 Electronics，并参与国家级大学生创新创业训练计划项目。
+  summary: 南京师范大学电气工程及其自动化专业本科生，关注智能系统、嵌入式实现与应用型研究。当前平均学分成绩 90.91，平均学分绩点 4.09，绩点排名 8/261，已通过大学英语六级（452 分）。目前以第一作者身份完成一篇步态分析与 3D 打印传感鞋相关论文，已进入 IEEE Sensors Journal 二审阶段；另有一篇忆阻 Hopfield 神经网络与 FPGA 实现方向二作论文发表于 Electronics，并持续推进步态分析系统与国家级大创项目。
 
   social_networks: []
 
@@ -40,10 +40,10 @@ cv:
         location: 南京师范大学
         start_date: 2025
         end_date: 至今
-        summary: 面向可穿戴步态分析，设计 3D 打印机械滤波传感鞋，并结合 ZUPT 物理模型、自监督残差网络与个性化少样本校准，实现实时步态参数估计。论文目前处于 IEEE Sensors Journal 一审返修阶段，通讯作者为[施建平教授](https://eae.njnu.edu.cn/info/1051/1874.htm)。
+        summary: 面向可穿戴步态分析，设计 3D 打印机械滤波传感鞋，并结合 ZUPT 物理模型、自监督残差网络与个性化少样本校准，实现实时步态参数估计。论文目前已进入 IEEE Sensors Journal 二审阶段，通讯作者为[施建平教授](https://eae.njnu.edu.cn/info/1051/1874.htm)。
         highlights:
-          - 参与传感鞋系统方案设计、实验流程、数据处理、算法验证与论文写作。
-          - 实验结果显示，嵌入式结构提升了步间信号一致性，个性化方法降低了步长和步态时相估计误差。
+          - 负责机械滤波传感鞋方案设计、实验流程组织、数据处理、算法验证与论文写作。
+          - 融合 ZUPT 与自监督残差网络完成个性化校准，支持步长、足高及站立/摆动相等多项步态参数估计。
       - company: Dynamic Analysis, FPGA Implementation and Application of Memristive Hopfield Neural Network with Synapse Crosstalk
         position: 第二作者
         start_date: 2025
@@ -51,7 +51,7 @@ cv:
         summary: 论文发表于 Electronics, 14(12), 2464，DOI：10.3390/electronics14122464。围绕含突触串扰的忆阻 Hopfield 神经网络开展动力学分析、FPGA 实现与图像加密应用研究，通讯作者为[闵富红教授](https://eae.njnu.edu.cn/info/1051/1866.htm)。
         highlights:
           - 作者：Minghao Shan, Yuyao Yang, Qianyi Tang, Xintong Hu and Fuhong Min。
-          - 研究验证了 MHNN 的复杂动力学行为，并通过模拟电路与 FPGA 实现验证模型可行性。
+          - 负责模拟电路推导与 Multisim 仿真验证，配合完成模型动力学分析、FPGA 实现与应用验证。
 
     竞赛与获奖:
       - title: 第十七届全国大学生数学竞赛（非数学 A 类）一等奖
@@ -64,26 +64,59 @@ cv:
         awarder: 工业和信息化部人才交流中心、蓝桥杯大赛组委会
         summary: 在单片机设计与开发方向获得全国总决赛二等奖，侧重嵌入式系统设计、程序开发、硬件接口理解与现场问题解决能力。
         image: /assets/img/awards/lanqiao-cup-award.jpg
+      - title: 全国大学生计算机设计大赛江苏省决赛（待答辩）
+        date: 2026-05
+        awarder: 全国大学生计算机设计大赛江苏省级赛区
+        summary: 基于步态解算与智能矫正系统项目入围江苏省决赛，正在准备现场答辩与展示。
+      - title: 全国大学生电子设计竞赛江苏省优秀奖
+        date: 2025-10
+        awarder: 全国大学生电子设计竞赛江苏赛区
+        summary: 参与电子系统设计与调试，体现了电路分析、硬件实现和现场联调能力。
+      - title: 全国大学生嵌入式芯片与系统设计竞赛江苏省三等奖
+        date: 2024-08
+        awarder: 全国大学生嵌入式芯片与系统设计竞赛江苏赛区
+        summary: 在嵌入式系统开发与软硬件协同设计方向取得阶段性竞赛成果。
+      - title: 南京师范大学本科生学术论坛比赛一等奖
+        date: 2025-11
+        awarder: 南京师范大学
+        summary: 围绕研究工作完成学术汇报与展示，体现了研究表达与学术交流能力。
 
     项目经历:
-      - name: 基于双阻态忆阻 Hopfield 神经网络的 FPGA 实现及应用
-        summary: 国家级大学生创新创业训练计划项目，围绕双阻态忆阻 Hopfield 神经网络的建模、FPGA 部署与应用验证开展研究，我担任第二负责人。
+      - name: 基于 IMU 和 3D 打印的步态解算与智能矫正系统
+        summary: 面向可穿戴步态分析，设计集成 IMU 的 3D 打印机械滤波传感鞋，并构建“嵌入式采集 + BLE 传输 + 个性化步态解算 + 移动端展示 + 云端分析”的完整系统。我担任主要负责人。
+        highlights:
+          - 硬件与通信：以 ESP32-S3 为主控，实现 IMU 数据采集与 BLE 低功耗无线传输。
+          - 算法：融合传统 ZUPT 与自监督残差网络，支持少样本个性化校准，可实时估计步长、足高、站立/摆动相等 10 余项参数。
+          - 应用落地：基于 Flutter 开发移动端 APP，通过 BLE 与硬件通信，并接入大模型 API 对采集数据进行分析与反馈。
+          - 云端部署：基于阿里云 ECS 搭建后端与数据库，记录步态数据，并部署模型用于身高、体重及行走地形反推。
+          - 项目成果：第一作者论文《3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis》已进入 IEEE Sensors Journal 二审阶段，相关专利已提交，基于该项目的全国大学生计算机设计大赛已进入江苏省决赛。
+        start_date: 2025-10
+        end_date: 至今
+      - name: 基于双阻态耦合忆阻 Hopfield 神经网络的 FPGA 实现及其应用
+        summary: 国家级大学生创新创业训练计划项目，围绕 DMHNN 建模、混沌动力学分析、模拟电路与 FPGA 协同验证以及图像加密应用开展研究，我担任第二负责人。
         highlights:
           - 指导老师：[闵富红教授](https://eae.njnu.edu.cn/info/1051/1866.htm)。
-          - 工作内容涵盖忆阻神经网络建模、FPGA 实现、系统验证与应用展示。
+          - 负责 MHNN 模型的模拟电路推导与 Multisim 仿真验证，完成忆阻突触串扰模块、双曲正切函数模块及主电路的等效设计。
+          - 通过 x-y、y-z 相平面输出波形仿真，验证模拟电路输出与数值仿真的一致性。
+          - 项目成果：第二作者 SCI 论文《Dynamic Analysis, FPGA Implementation and Application of Memristive Hopfield Neural Network with Synapse Crosstalk》发表于 Electronics。
         url: https://eae.njnu.edu.cn/info/1051/1866.htm
-        start_date: 2025
-        end_date: 2025
+        start_date: 2024-12
+        end_date: 2026-05
+
+    荣誉与奖学金:
+      - bullet: 国家励志奖学金（2025）
+      - bullet: 校级三好学生（2026）
+      - bullet: 校级奖学金二等奖（2023-2026）
 
     技能:
       - name: 编程与工具
         level: 熟悉
         icon: fa-solid fa-code
-        keywords: "Python, C/C++, Git, Linux"
+        keywords: "C, Python, Dart, Git, Linux, Flutter"
       - name: 研究与开发
-        level: 待补充
+        level: 熟悉
         icon: fa-solid fa-flask
-        keywords: "数据处理, 实验记录, 模型训练, 系统实现"
+        keywords: "ESP32-S3, BLE, Multisim, Vivado, Verilog, 阿里云 ECS, 数据处理, 模型训练, 系统实现, AI 辅助开发"
 
     语言:
       - name: 中文
@@ -94,4 +127,4 @@ cv:
     兴趣方向:
       - name: 智能系统与应用研究
         icon: fa-solid fa-tag
-        keywords: "机器学习, 计算机视觉, 工程实践, 应用开发"
+        keywords: "智能感知, 嵌入式系统, FPGA 实现, 可穿戴设备, 应用开发"

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-论文 “3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis” 目前处于一审返修阶段。
+论文 “3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis” 目前已进入二审阶段。
