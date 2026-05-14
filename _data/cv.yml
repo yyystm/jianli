@@ -76,10 +76,12 @@ cv:
         date: 2024-08
         awarder: 全国大学生嵌入式芯片与系统设计竞赛江苏赛区
         summary: 在嵌入式系统开发与软硬件协同设计方向取得阶段性竞赛成果。
+        image: /assets/img/awards/embedded-chip-award.jpg
       - title: 南京师范大学本科生学术论坛比赛一等奖
         date: 2025-11
         awarder: 南京师范大学
         summary: 围绕研究工作完成学术汇报与展示，体现了研究表达与学术交流能力。
+        image: /assets/img/awards/academic-forum-award.jpg
 
     项目经历:
       - name: 基于 IMU 和 3D 打印的步态解算与智能矫正系统
