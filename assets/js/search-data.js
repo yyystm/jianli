@@ -384,8 +384,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/jianli/news/announcement_2/";
-            },},{id: "news-论文-3d-printed-mechanical-filtering-shoes-for-hybrid-self-supervised-gait-analysis-目前处于一审返修阶段",
-          title: '论文 “3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis” 目前处于一审返修阶段。',
+            },},{id: "news-论文-3d-printed-mechanical-filtering-shoes-for-hybrid-self-supervised-gait-analysis-目前已进入二审阶段",
+          title: '论文 “3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis” 目前已进入二审阶段。',
           description: "",
           section: "News",},{id: "projects-竞赛作品待补充",
           title: '竞赛作品待补充',
