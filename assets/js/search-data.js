@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-项目",
           title: "项目",
-          description: "竞赛、课程设计和个人项目的整理。",
+          description: "仅保留两项最能代表当前研究与工程能力的项目。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/jianli/projects/";
@@ -392,14 +392,14 @@ ninja.data = [{
           description: "用一句话概括比赛题目、解决方案和最终结果。",
           section: "Projects",handler: () => {
               window.location.href = "/jianli/projects/1_project/";
-            },},{id: "projects-研究项目待补充",
-          title: '研究项目待补充',
-          description: "与论文或实验相关的研究型项目。",
+            },},{id: "projects-基于-imu-和-3d-打印的步态解算与智能矫正系统",
+          title: '基于 IMU 和 3D 打印的步态解算与智能矫正系统',
+          description: "以 3D 打印机械滤波传感鞋为载体，完成嵌入式采集、BLE 传输、个性化步态解算、移动端展示与云端分析的完整系统。",
           section: "Projects",handler: () => {
               window.location.href = "/jianli/projects/2_project/";
-            },},{id: "projects-工程项目待补充",
-          title: '工程项目待补充',
-          description: "一个能体现动手能力和完整交付的项目。",
+            },},{id: "projects-基于双阻态耦合忆阻-hopfield-神经网络的-fpga-实现及其应用",
+          title: '基于双阻态耦合忆阻 Hopfield 神经网络的 FPGA 实现及其应用',
+          description: "国家级大创项目，围绕 DMHNN 建模、混沌动力学分析、模拟电路与 FPGA 协同验证，以及图像加密应用展开。",
           section: "Projects",handler: () => {
               window.location.href = "/jianli/projects/3_project/";
             },},{id: "projects-备用项目一",
