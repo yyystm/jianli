@@ -183,6 +183,8 @@ exclude:
   - FAQ.md
   - Gemfile
   - Gemfile.lock
+  - jekyll-8080.err.log
+  - jekyll-8080.out.log
   - INSTALL.md
   - LICENSE
   - lighthouse_results/
@@ -192,6 +194,8 @@ exclude:
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - tmp_electronics_figures/
+  - tmp_electronics_pages/
   - vendor
 keep_files:
   - CNAME
