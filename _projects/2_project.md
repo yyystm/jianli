@@ -9,101 +9,180 @@ featured_project: true
 related_publications: true
 ---
 
-该项目是第一作者论文对应的系统原型，担任主要负责人。项目目标不是单独做一个传感器或一个算法，而是把 3D 打印鞋体、嵌入式 IMU 采集、物理模型解算、少样本个性化校准和移动端反馈串成一条完整链路。
+<div class="gait-case-study">
+  <section class="gait-case-intro">
+    <p class="gait-case-eyebrow">Research Prototype / Wearable Gait Analysis</p>
+    <div class="gait-case-hero">
+      <p class="gait-case-lead">
+        该项目是第一作者论文对应的系统原型，目标是把传感鞋硬件、IMU 数据采集、物理模型解算、少样本个性化校准和移动端反馈连成一套可验证的步态分析流程。项目重点在于“硬件先提升信号质量，算法再做实时估计和个体校正”，而不是孤立展示某一个传感器或模型。
+      </p>
+      <figure class="gait-case-visual">
+        <img src="{{ '/assets/img/publication_preview/gait-shoe-graphical-abstract.png' | relative_url }}" alt="3D 打印传感鞋与步态解算系统图">
+        <figcaption>3D 打印传感鞋、IMU 采集与步态参数反馈系统示意</figcaption>
+      </figure>
+    </div>
+    <div class="gait-evidence-strip" aria-label="项目关键指标">
+      <div>
+        <span>信号一致性 PCC</span>
+        <strong>0.848 → 0.913</strong>
+      </div>
+      <div>
+        <span>步长误差 MAE</span>
+        <strong>2.29 cm</strong>
+      </div>
+      <div>
+        <span>支撑相误差</span>
+        <strong>21.30 ms</strong>
+      </div>
+      <div>
+        <span>摆动相误差</span>
+        <strong>21.80 ms</strong>
+      </div>
+    </div>
+  </section>
 
-<div class="gait-project-hero">
-  <div>
-    <span class="gait-project-kicker">Project Logic</span>
-    <h2>从稳定采集到个性化反馈的闭环系统</h2>
-    <p>系统先通过 3D 打印结构提升 IMU 信号稳定性，再用 ZUPT 提供可解释的物理基线，最后通过自监督残差网络校正个体误差，并把步态参数转化为对称性评价和鞋体设计反馈。</p>
-  </div>
-  <div class="gait-project-metrics">
-    <div><span>PCC</span><strong>0.848 → 0.913</strong></div>
-    <div><span>步长 MAE</span><strong>2.29 cm</strong></div>
-    <div><span>支撑/摆动相误差</span><strong>21.30 / 21.80 ms</strong></div>
-  </div>
+  <section class="gait-section">
+    <div class="gait-section-heading">
+      <span>01</span>
+      <h2>项目问题</h2>
+    </div>
+    <div class="gait-two-column">
+      <div class="gait-panel">
+        <h3>硬件侧问题</h3>
+        <p>传统绑带式 IMU 容易出现安装角度不一致、传感器与足部相对滑动、高频振动残留等问题。输入信号不稳定时，后续再复杂的算法也会受到限制。</p>
+      </div>
+      <div class="gait-panel">
+        <h3>算法侧问题</h3>
+        <p>单纯物理积分方法可解释、速度快，但会出现漂移；纯深度学习方法需要较多标注数据，且不一定适合端侧实时运行。项目采用物理模型与残差学习结合的方式降低这两类风险。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gait-section">
+    <div class="gait-section-heading">
+      <span>02</span>
+      <h2>系统流程</h2>
+    </div>
+    <div class="gait-pipeline">
+      <div>
+        <span>01</span>
+        <strong>传感鞋集成</strong>
+        <p>IMU 节点嵌入 3D 打印鞋体，减少外挂式传感器的相对晃动。</p>
+      </div>
+      <div>
+        <span>02</span>
+        <strong>机械滤波</strong>
+        <p>中底 gyroid 晶格结构缓冲高频扰动，提高跨步信号一致性。</p>
+      </div>
+      <div>
+        <span>03</span>
+        <strong>ZUPT 基线</strong>
+        <p>利用零速约束获得步长、步态事件和时相参数的初始估计。</p>
+      </div>
+      <div>
+        <span>04</span>
+        <strong>残差校准</strong>
+        <p>自监督预训练提取通用表征，再用少量个人数据完成个性化补偿。</p>
+      </div>
+      <div>
+        <span>05</span>
+        <strong>反馈闭环</strong>
+        <p>将步态参数转化为对称性指数和鞋体设计反馈，供移动端展示。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gait-section">
+    <div class="gait-section-heading">
+      <span>03</span>
+      <h2>核心实现</h2>
+    </div>
+    <div class="gait-method-grid">
+      <div>
+        <h3>3D 打印传感鞋</h3>
+        <p>传感器被固定在鞋体结构中，中底使用 gyroid 晶格承担缓冲与机械低通滤波作用。相比绑带式方案，传感器和足部的耦合更稳定，输入数据更适合后续估计。</p>
+      </div>
+      <div>
+        <h3>ZUPT 物理估计</h3>
+        <p>系统通过 IMU 姿态与运动状态识别步态周期中的关键事件，在足部短暂停止阶段引入零速约束，得到可解释、低延迟的步态参数初值。</p>
+      </div>
+      <div>
+        <h3>自监督残差网络</h3>
+        <p>网络不直接替代物理模型，而是学习物理估计与参考值之间的偏差。先用未标注数据学习通用步态表征，再冻结编码器，用少量个人数据微调回归头。</p>
+      </div>
+      <div>
+        <h3>移动端与个性化反馈</h3>
+        <p>移动端接收数据并展示步长、支撑相、摆动相等结果，同时计算左右对称性指标，为后续定制化鞋体设计提供量化依据。</p>
+      </div>
+    </div>
+    <div class="gait-equation">
+      <span>输出逻辑</span>
+      <strong>最终步态参数 = ZUPT 物理估计 + 个性化残差补偿</strong>
+    </div>
+  </section>
+
+  <section class="gait-section">
+    <div class="gait-section-heading">
+      <span>04</span>
+      <h2>验证结果</h2>
+    </div>
+    <div class="gait-result-list">
+      <p><strong>信号质量：</strong>嵌入式传感鞋提高了跨步一致性，PCC 从 0.848 提升至 0.913；频域指标显示高频残余减少，三轴平均频谱信噪指标从 3.33 dB 提升至 7.52 dB。</p>
+      <p><strong>参数估计：</strong>个性化残差补偿后，步长 MAE 为 2.29 cm，支撑相和摆动相时间误差分别为 21.30 ms 和 21.80 ms。</p>
+      <p><strong>系统定位：</strong>该原型适合用于低成本步态监测和个性化鞋体设计反馈，不替代临床诊断。</p>
+    </div>
+  </section>
+
+  <section class="gait-section">
+    <div class="gait-section-heading">
+      <span>05</span>
+      <h2>建议补充图片</h2>
+    </div>
+    <div class="gait-figure-grid">
+      <div class="gait-figure-slot">
+        <span>Fig. 01</span>
+        <strong>系统总览</strong>
+        <p>放“传感鞋采集 → 算法解算 → 移动端反馈”的整体流程图。</p>
+      </div>
+      <div class="gait-figure-slot">
+        <span>Fig. 02</span>
+        <strong>鞋体结构</strong>
+        <p>放实物鞋、IMU 安装位置、gyroid 晶格和传感节点腔体。</p>
+      </div>
+      <div class="gait-figure-slot">
+        <span>Fig. 03</span>
+        <strong>信号对比</strong>
+        <p>放嵌入式方案与绑带式方案的波形、频谱或关键指标图。</p>
+      </div>
+      <div class="gait-figure-slot">
+        <span>Fig. 04</span>
+        <strong>算法框架</strong>
+        <p>放 ZUPT、预训练、少样本校准和残差输出之间的关系图。</p>
+      </div>
+      <div class="gait-figure-slot">
+        <span>Fig. 05</span>
+        <strong>实验采集</strong>
+        <p>放行走采集场景、足迹测量或高速相机参考系统。</p>
+      </div>
+      <div class="gait-figure-slot">
+        <span>Fig. 06</span>
+        <strong>移动端反馈</strong>
+        <p>放 APP 界面、对称性指数展示或鞋体设计反馈流程。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gait-section">
+    <div class="gait-section-heading">
+      <span>06</span>
+      <h2>个人负责内容</h2>
+    </div>
+    <ul class="gait-responsibility-list">
+      <li>负责整体系统方案设计，将 3D 打印鞋体、IMU 采集、算法估计和移动端展示组织为完整原型。</li>
+      <li>参与传感鞋结构设计、IMU 数据采集流程、对比实验设计和数据处理。</li>
+      <li>搭建 ZUPT 物理估计与自监督残差校准流程，完成步长和步态时相参数验证。</li>
+      <li>整理实验结果并完成论文写作与返修，第一作者论文已进入 IEEE Sensors Journal 二审阶段。</li>
+      <li>基于该系统参加全国大学生计算机设计大赛，已进入江苏省决赛。</li>
+    </ul>
+  </section>
 </div>
-
-## 1. 问题定义
-
-可穿戴 IMU 适合低成本、连续化步态分析，但传统绑带式安装存在两个主要问题：一是传感器与足部之间会发生相对滑动，导致高频振动和信号不稳定；二是每次穿戴角度不完全一致，会影响后续步长、步态事件和时相参数估计。
-
-算法层面，纯物理积分方法可解释性强、运行快，但容易积累漂移；纯深度学习方法可以学习复杂关系，但通常需要大量标注数据。该项目的核心思路是把二者结合：用物理模型给出初始估计，再用少量个人数据进行残差修正。
-
-<div class="project-image-slot">
-  <div class="slot-label">待插图 1</div>
-  <strong>问题与系统总览图</strong>
-  <p>建议放一张“绑带式 IMU 问题 → 3D 打印传感鞋 → 手机端反馈”的流程图，用于解释为什么需要硬件和算法协同设计。</p>
-</div>
-
-## 2. 硬件系统
-
-硬件部分采用集成式 3D 打印传感鞋。IMU 采集节点被固定在鞋体结构中，减少绑带安装带来的相对滑动；中底采用 gyroid 晶格结构，兼顾支撑、缓冲和机械滤波。系统通过低功耗无线通信把惯性数据传输到移动端，同时保留本地缓存以降低无线传输过程中的数据丢失风险。
-
-这部分的工程价值在于：传感器不再只是“贴在脚上”，而是和鞋体形成稳定耦合。这样后续算法接收到的数据更稳定，物理模型和学习模型都能从更干净的输入中受益。
-
-<div class="project-image-slot">
-  <div class="slot-label">待插图 2</div>
-  <strong>3D 打印传感鞋结构图</strong>
-  <p>建议放鞋体实物、IMU 节点位置、gyroid 晶格、传感节点腔体等图片。重点展示“传感器嵌入鞋体”而不是普通外挂传感器。</p>
-</div>
-
-## 3. 机械滤波与信号质量
-
-为了验证嵌入式结构是否真的改善信号质量，项目将 3D 打印传感鞋与传统绑带式 IMU 进行对比。结果显示，嵌入式结构提高了跨步信号一致性，PCC 从 0.848 提升到 0.913。
-
-频域分析进一步说明，高频残余成分明显减少。三轴平均频谱信噪指标从 3.33 dB 提升到 7.52 dB，高频能量比例从 33.05% 降到 19.06%。这说明鞋体结构不仅是安装载体，也承担了机械低通滤波的作用。
-
-<div class="project-image-slot">
-  <div class="slot-label">待插图 3</div>
-  <strong>信号质量对比图</strong>
-  <p>建议放 3D 打印嵌入式方案与绑带式方案的加速度波形、频谱对比或关键指标柱状图，突出 PCC、频谱信噪指标和高频能量比例变化。</p>
-</div>
-
-## 4. 步态解算算法
-
-算法分为两层。第一层是基于 ZUPT 的物理估计：通过姿态解算识别步态周期中的关键事件，利用足部短暂停止的时刻进行零速约束，得到步长、支撑相、摆动相等初始参数。这个部分运行快、可解释，适合作为边缘端实时基线。
-
-第二层是残差校准网络。网络不直接替代物理模型，而是学习物理模型与真实结果之间的偏差。训练流程分为两步：先用未标注 IMU 数据进行自监督预训练，学习通用步态表征；再在少量个人标注数据上冻结编码器，只微调回归头，从而减少小样本过拟合。
-
-最终输出可以理解为：
-
-`最终步态参数 = ZUPT 物理估计 + 个性化残差补偿`
-
-<div class="project-image-slot">
-  <div class="slot-label">待插图 4</div>
-  <strong>混合算法框架图</strong>
-  <p>建议放 ZUPT 基线、自监督预训练、少样本个性化校准、残差补偿输出之间的关系图。这里是项目最需要讲清楚的算法图。</p>
-</div>
-
-## 5. 数据采集与验证
-
-数据分为两类：未标注数据用于学习通用步态特征，覆盖多名受试者和多种行走场景；少量标注数据用于个性化校准，借助足迹测量和高速相机建立步长与步态事件参考值。
-
-实验结果表明，个性化残差补偿可以明显降低物理模型在时相估计上的偏差。平均步长 MAE 为 2.29 cm，支撑相和摆动相时间误差分别控制在 21.30 ms 和 21.80 ms。与只用 ZUPT 相比，混合框架在实时性和精度之间取得了更好的平衡。
-
-<div class="project-image-slot">
-  <div class="slot-label">待插图 5</div>
-  <strong>实验采集与结果图</strong>
-  <p>建议放行走采集场景、足迹测量、高速相机布置、消融实验结果或与其他 IMU 方法的对比表。</p>
-</div>
-
-## 6. 个性化反馈与应用端
-
-项目进一步把步长、支撑相、摆动相等参数转化为对称性指数，用于描述左右步态差异。相比单步结果，多步平均后的对称性评价更稳定，也更适合作为定制化鞋体设计的输入。
-
-移动端部分用于接收传感数据、展示解算结果，并把确定性的步态指标转化为更易理解的反馈文本。系统定位是步态监测和个性化鞋体设计反馈平台，不替代临床诊断。
-
-<div class="project-image-slot">
-  <div class="slot-label">待插图 6</div>
-  <strong>移动端与个性化反馈流程图</strong>
-  <p>建议放 Flutter APP 界面、SI 指标展示、鞋体参数调整逻辑或“采集-分析-反馈-设计”的闭环流程图。</p>
-</div>
-
-## 7. 负责内容
-
-- 负责整体系统方案设计，将 3D 打印鞋体、IMU 采集、算法估计和移动端展示组织为完整原型。
-- 参与传感鞋结构设计、IMU 数据采集流程、对比实验设计和数据处理。
-- 搭建 ZUPT 物理估计与自监督残差校准流程，完成步长和步态时相参数验证。
-- 整理实验结果并完成论文写作与返修，第一作者论文已进入 IEEE Sensors Journal 二审阶段。
-- 基于该系统参加全国大学生计算机设计大赛，已进入江苏省决赛。
