@@ -1,0 +1,868 @@
+Configuration file: D:/personal_jianli/al-folio/_config.yml
+            Source: D:/personal_jianli/al-folio
+       Destination: D:/personal_jianli/al-folio/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    done in 14.783 seconds.
+ Auto-regeneration: enabled for 'D:/personal_jianli/al-folio'
+    Server address: http://127.0.0.1:8081/
+  Server running... press ctrl-c to stop.
+      Regenerating: 1 file(s) changed at 2026-05-15 21:43:25
+                    jekyll-8081.out.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+[2026-05-15 21:43:31] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:9 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 12.8862473 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:43:38
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 13.5828521 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:43:52
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+[2026-05-15 21:43:53] ERROR Errno::ECONNRESET: An existing connection was forcibly closed by the remote host. @ io_fillbuf - fd:8 
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `eof?'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/httpserver.rb:82:in `run'
+	C:/Ruby33-x64/lib/ruby/gems/3.3.0/gems/webrick-1.9.2/lib/webrick/server.rb:309:in `block in start_thread'
+                    ...done in 12.4168653 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:44:04
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 13.5404749 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:44:18
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 13.8577938 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:44:32
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 14.1747299 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:44:46
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 19.0985456 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:45:05
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 15.9207765 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:45:21
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 16.6959308 seconds.
+                    
+      Regenerating: 3 file(s) changed at 2026-05-15 21:45:38
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+                    _sass/_layout.scss
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 14.6228159 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:45:53
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 13.0573848 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:46:06
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 14.5055898 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:46:20
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 14.9294828 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:46:35
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 13.9359252 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:46:49
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 13.0838368 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:47:03
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 13.3876759 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:47:16
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 14.0702059 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:47:30
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 15.4384272 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:47:46
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 14.0720479 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:48:00
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 15.2235061 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-05-15 21:48:15
+                    jekyll-8081.out.log
+                    jekyll-8081.err.log
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/bibsearch.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/calendar-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/chartjs-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/common.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/copy_code.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/diff2html-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/overrides.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/template.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/distillpub/transforms.v2.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/echarts-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/highlight-search-term.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/jupyter_new_tab.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/leaflet-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/masonry.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mathjax-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/mermaid-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/newsletter.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/no_defer.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/plotly-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/progress-bar.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/pseudocode-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/search-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/shortcut-key.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/theme.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/tooltips-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/typograms.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/vega-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/venobox-setup.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/wechat.js
+Terser: Minifying D:/personal_jianli/al-folio/assets/js/zoom.js
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed 1 pagination page(s)
+       Imagemagick: Disabled in site.config

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://yyystm.github.io/jianli/sitemap.xml
+Sitemap: http://localhost:8081/sitemap.xml

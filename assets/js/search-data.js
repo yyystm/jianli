@@ -7,28 +7,28 @@ ninja.data = [{
     title: "首页",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/jianli/";
+      window.location.href = "/";
     },
   },{id: "nav-论文",
           title: "论文",
           description: "本科阶段的论文、研究经历和相关成果。",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/jianli/publications/";
+            window.location.href = "/publications/";
           },
         },{id: "nav-项目",
           title: "项目",
           description: "当前重点展示步态解算与智能矫正系统这一项代表性项目。",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/jianli/projects/";
+            window.location.href = "/projects/";
           },
         },{id: "nav-简历",
           title: "简历",
           description: "这里展示教育背景、论文与研究、竞赛经历、项目经历和技能栈。学校邮箱：21230213@njnu.edu.cn；QQ 邮箱：2717533321@qq.com。",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/jianli/cv/";
+            window.location.href = "/cv/";
           },
         },{id: "post-a-post-with-plotly-js",
         
@@ -38,7 +38,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2025/plotly/";
+            window.location.href = "/blog/2025/plotly/";
           
         },
       },{id: "post-a-post-with-image-galleries",
@@ -49,7 +49,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/photo-gallery/";
+            window.location.href = "/blog/2024/photo-gallery/";
           
         },
       },{id: "post-a-post-with-tabs",
@@ -60,7 +60,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/tabs/";
+            window.location.href = "/blog/2024/tabs/";
           
         },
       },{id: "post-a-post-with-typograms",
@@ -71,7 +71,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/typograms/";
+            window.location.href = "/blog/2024/typograms/";
           
         },
       },{id: "post-a-post-that-can-be-cited",
@@ -82,7 +82,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/post-citation/";
+            window.location.href = "/blog/2024/post-citation/";
           
         },
       },{id: "post-a-post-with-pseudo-code",
@@ -93,7 +93,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/pseudocode/";
+            window.location.href = "/blog/2024/pseudocode/";
           
         },
       },{id: "post-a-post-with-code-diff",
@@ -104,7 +104,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/code-diff/";
+            window.location.href = "/blog/2024/code-diff/";
           
         },
       },{id: "post-a-post-with-advanced-image-components",
@@ -115,7 +115,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/advanced-images/";
+            window.location.href = "/blog/2024/advanced-images/";
           
         },
       },{id: "post-a-post-with-vega-lite",
@@ -126,7 +126,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/vega-lite/";
+            window.location.href = "/blog/2024/vega-lite/";
           
         },
       },{id: "post-a-post-with-geojson",
@@ -137,7 +137,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/geojson-map/";
+            window.location.href = "/blog/2024/geojson-map/";
           
         },
       },{id: "post-a-post-with-echarts",
@@ -148,7 +148,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/echarts/";
+            window.location.href = "/blog/2024/echarts/";
           
         },
       },{id: "post-a-post-with-chart-js",
@@ -159,7 +159,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2024/chartjs/";
+            window.location.href = "/blog/2024/chartjs/";
           
         },
       },{id: "post-a-post-with-tikzjax",
@@ -170,7 +170,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/tikzjax/";
+            window.location.href = "/blog/2023/tikzjax/";
           
         },
       },{id: "post-a-post-with-bibliography",
@@ -181,7 +181,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/post-bibliography/";
+            window.location.href = "/blog/2023/post-bibliography/";
           
         },
       },{id: "post-a-post-with-jupyter-notebook",
@@ -192,7 +192,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/jupyter-notebook/";
+            window.location.href = "/blog/2023/jupyter-notebook/";
           
         },
       },{id: "post-a-post-with-custom-blockquotes",
@@ -203,7 +203,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/custom-blockquotes/";
+            window.location.href = "/blog/2023/custom-blockquotes/";
           
         },
       },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
@@ -214,7 +214,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/sidebar-table-of-contents/";
+            window.location.href = "/blog/2023/sidebar-table-of-contents/";
           
         },
       },{id: "post-a-post-with-audios",
@@ -225,7 +225,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/audios/";
+            window.location.href = "/blog/2023/audios/";
           
         },
       },{id: "post-a-post-with-videos",
@@ -236,7 +236,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/videos/";
+            window.location.href = "/blog/2023/videos/";
           
         },
       },{id: "post-displaying-beautiful-tables-with-bootstrap-tables",
@@ -247,7 +247,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/tables/";
+            window.location.href = "/blog/2023/tables/";
           
         },
       },{id: "post-a-post-with-table-of-contents",
@@ -258,7 +258,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2023/table-of-contents/";
+            window.location.href = "/blog/2023/table-of-contents/";
           
         },
       },{id: "post-a-post-with-giscus-comments",
@@ -269,7 +269,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2022/giscus-comments/";
+            window.location.href = "/blog/2022/giscus-comments/";
           
         },
       },{id: "post-a-post-with-redirect",
@@ -280,7 +280,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/assets/pdf/example_pdf.pdf";
+            window.location.href = "/assets/pdf/example_pdf.pdf";
           
         },
       },{id: "post-a-post-with-diagrams",
@@ -291,7 +291,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2021/diagrams/";
+            window.location.href = "/blog/2021/diagrams/";
           
         },
       },{id: "post-a-distill-style-blog-post",
@@ -302,7 +302,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2021/distill/";
+            window.location.href = "/blog/2021/distill/";
           
         },
       },{id: "post-a-post-with-twitter",
@@ -313,7 +313,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2020/twitter/";
+            window.location.href = "/blog/2020/twitter/";
           
         },
       },{id: "post-a-post-with-disqus-comments",
@@ -324,7 +324,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2015/disqus-comments/";
+            window.location.href = "/blog/2015/disqus-comments/";
           
         },
       },{id: "post-a-post-with-math",
@@ -335,7 +335,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2015/math/";
+            window.location.href = "/blog/2015/math/";
           
         },
       },{id: "post-a-post-with-code",
@@ -346,7 +346,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2015/code/";
+            window.location.href = "/blog/2015/code/";
           
         },
       },{id: "post-a-post-with-images",
@@ -357,7 +357,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2015/images/";
+            window.location.href = "/blog/2015/images/";
           
         },
       },{id: "post-a-post-with-formatting-and-links",
@@ -368,14 +368,14 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/jianli/blog/2015/formatting-and-links/";
+            window.location.href = "/blog/2015/formatting-and-links/";
           
         },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/jianli/books/the_godfather/";
+              window.location.href = "/books/the_godfather/";
             },},{id: "news-个人主页正在搭建中-后续会补充真实的论文-竞赛和项目经历",
           title: '个人主页正在搭建中，后续会补充真实的论文、竞赛和项目经历。',
           description: "",
@@ -383,7 +383,7 @@ ninja.data = [{
           title: '主页结构调整',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/jianli/news/announcement_2/";
+              window.location.href = "/news/announcement_2/";
             },},{id: "news-论文-3d-printed-mechanical-filtering-shoes-for-hybrid-self-supervised-gait-analysis-目前已进入二审阶段",
           title: '论文 “3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis” 目前已进入二审阶段。',
           description: "",
@@ -391,63 +391,63 @@ ninja.data = [{
           title: '竞赛作品待补充',
           description: "用一句话概括比赛题目、解决方案和最终结果。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/1_project/";
+              window.location.href = "/projects/1_project/";
             },},{id: "projects-基于-imu-和-3d-打印的步态解算与智能矫正系统",
           title: '基于 IMU 和 3D 打印的步态解算与智能矫正系统',
           description: "面向可穿戴步态分析，围绕“稳定采集、实时解算、个性化校准、对称性反馈”构建 3D 打印传感鞋与混合算法系统。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/2_project/";
+              window.location.href = "/projects/2_project/";
             },},{id: "projects-基于双阻态耦合忆阻-hopfield-神经网络的-fpga-实现及其应用",
           title: '基于双阻态耦合忆阻 Hopfield 神经网络的 FPGA 实现及其应用',
           description: "国家级大创项目，围绕 DMHNN 建模、混沌动力学分析、模拟电路与 FPGA 协同验证，以及图像加密应用展开。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/3_project/";
+              window.location.href = "/projects/3_project/";
             },},{id: "projects-备用项目一",
           title: '备用项目一',
           description: "后续可替换为真实项目。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/4_project/";
+              window.location.href = "/projects/4_project/";
             },},{id: "projects-备用项目二",
           title: '备用项目二',
           description: "后续可替换为真实项目。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/5_project/";
+              window.location.href = "/projects/5_project/";
             },},{id: "projects-备用项目三",
           title: '备用项目三',
           description: "后续可替换为真实项目。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/6_project/";
+              window.location.href = "/projects/6_project/";
             },},{id: "projects-备用竞赛经历",
           title: '备用竞赛经历',
           description: "后续可替换为真实比赛经历。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/7_project/";
+              window.location.href = "/projects/7_project/";
             },},{id: "projects-备用研究经历",
           title: '备用研究经历',
           description: "后续可替换为真实研究经历。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/8_project/";
+              window.location.href = "/projects/8_project/";
             },},{id: "projects-其他经历",
           title: '其他经历',
           description: "后续可补充更多内容。",
           section: "Projects",handler: () => {
-              window.location.href = "/jianli/projects/9_project/";
+              window.location.href = "/projects/9_project/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
           section: "Teachings",handler: () => {
-              window.location.href = "/jianli/teachings/data-science-fundamentals/";
+              window.location.href = "/teachings/data-science-fundamentals/";
             },},{id: "teachings-introduction-to-machine-learning",
           title: 'Introduction to Machine Learning',
           description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
           section: "Teachings",handler: () => {
-              window.location.href = "/jianli/teachings/introduction-to-machine-learning/";
+              window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/jianli/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("/assets/pdf/example_pdf.pdf", "_blank");
         },
       },{
         id: 'social-email',
