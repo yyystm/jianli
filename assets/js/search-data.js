@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-项目",
           title: "项目",
-          description: "仅保留两项最能代表当前研究与工程能力的项目。",
+          description: "当前重点展示步态解算与智能矫正系统这一项代表性项目。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/jianli/projects/";
@@ -394,7 +394,7 @@ ninja.data = [{
               window.location.href = "/jianli/projects/1_project/";
             },},{id: "projects-基于-imu-和-3d-打印的步态解算与智能矫正系统",
           title: '基于 IMU 和 3D 打印的步态解算与智能矫正系统',
-          description: "以 3D 打印机械滤波传感鞋为载体，完成嵌入式采集、BLE 传输、个性化步态解算、移动端展示与云端分析的完整系统。",
+          description: "面向可穿戴步态分析，围绕“稳定采集、实时解算、个性化校准、对称性反馈”构建 3D 打印传感鞋与混合算法系统。",
           section: "Projects",handler: () => {
               window.location.href = "/jianli/projects/2_project/";
             },},{id: "projects-基于双阻态耦合忆阻-hopfield-神经网络的-fpga-实现及其应用",

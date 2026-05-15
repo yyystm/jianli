@@ -1,5 +1,566 @@
-<!DOCTYPE html> <html lang="zh-CN"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> 基于 IMU 和 3D 打印的步态解算与智能矫正系统 | 杨玉垚 </title> <meta name="author" content="杨玉垚 "> <meta name="description" content="以 3D 打印机械滤波传感鞋为载体，完成嵌入式采集、BLE 传输、个性化步态解算、移动端展示与云端分析的完整系统。"> <meta name="keywords" content="杨玉垚, 南京师范大学, 电气工程及其自动化, 本科生, 论文, 竞赛, 项目, 简历"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <link rel="stylesheet" href="/jianli/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/jianli/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/jianli/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/jianli/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/jianli/assets/css/main.css?v=1778754688"> <link rel="canonical" href="https://yyystm.github.io/jianli/projects/2_project/"> <script src="/jianli/assets/js/theme.js?v=8b584a15716c76957aad5f042a35e757&amp;theme=light-default-v2"></script> <link defer rel="stylesheet" href="/jianli/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      基于 IMU 和 3D 打印的步态解算与智能矫正系统 | 杨玉垚
+    
+  
+</title>
+<meta name="author" content="杨玉垚 ">
+<meta name="description" content="面向可穿戴步态分析，围绕“稳定采集、实时解算、个性化校准、对称性反馈”构建 3D 打印传感鞋与混合算法系统。">
+
+  <meta name="keywords" content="杨玉垚, 南京师范大学, 电气工程及其自动化, 本科生, 论文, 竞赛, 项目, 简历">
+
+
+
+
+
+
+
+
+
+
+<!-- Security: Content Security Policy -->
+<!-- Permissive CSP suitable for academic websites. Allows external images, videos, and common embed services. -->
+<!-- To customize for your needs, see: https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;">
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/jianli/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/jianli/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" href="/jianli/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/jianli/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+
+
+
+
+  <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+
+<link rel="stylesheet" href="/jianli/assets/css/main.css?v=1778851657">
+<link rel="canonical" href="https://yyystm.github.io/jianli/projects/2_project/">
+
+
+  <!-- Dark Mode -->
+  
+  <script src="/jianli/assets/js/theme.js?v=8b584a15716c76957aad5f042a35e757&amp;theme=light-default-v2"></script>
+  <link defer rel="stylesheet" href="/jianli/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark">
+  <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/jianli/"> 杨玉垚 </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="展开导航"> <span class="sr-only">展开导航</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/jianli/">首页 </a> </li> <li class="nav-item "> <a class="nav-link" href="/jianli/publications/">论文 </a> </li> <li class="nav-item active"> <a class="nav-link" href="/jianli/projects/">项目 <span class="sr-only">（当前页面）</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/jianli/cv/">简历 </a> </li> <li class="toggle-container"> <button id="light-toggle" title="切换主题"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">基于 IMU 和 3D 打印的步态解算与智能矫正系统</h1> <p class="post-description">以 3D 打印机械滤波传感鞋为载体，完成嵌入式采集、BLE 传输、个性化步态解算、移动端展示与云端分析的完整系统。</p> </header> <article> <p>该项目是当前阶段最核心的代表性项目，也是第一作者论文对应的系统原型，担任主要负责人。</p> <ul> <li> <strong>项目目标：</strong> 面向可穿戴步态分析，设计集成 IMU 的 3D 打印机械滤波传感鞋，提升信号稳定性，并实现实时、个性化步态参数估计。</li> <li> <strong>硬件与通信：</strong> 以 ESP32-S3 为主控，实现 IMU 数据采集与 BLE 低功耗无线传输。</li> <li> <strong>算法方法：</strong> 融合 ZUPT 物理模型与自监督残差网络，并结合少样本个性化校准，支持步长、足高、站立相、摆动相等 10 余项参数估计。</li> <li> <strong>应用落地：</strong> 基于 Flutter 开发移动端 APP，用于数据接收、结果展示与分析反馈。</li> <li> <strong>云端部署：</strong> 基于阿里云 ECS 搭建后端与数据库，记录步态数据，并部署模型用于身高、体重及行走地形反推。</li> <li> <strong>阶段成果：</strong> 第一作者论文 <em>3D-Printed Mechanical Filtering Shoes for Hybrid Self-Supervised Gait Analysis</em> 已进入 IEEE Sensors Journal 二审阶段；相关专利已提交；基于该项目的全国大学生计算机设计大赛已进入江苏省决赛。</li> </ul> </article> <h2>参考文献</h2> <div class="publications"> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © 版权所有 2026 杨玉垚。基于 <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> 与 <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> 主题构建。 之后可部署到 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>。 </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/jianli/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/jianli/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/jianli/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script> <script src="/jianli/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script> <script defer src="/jianli/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/jianli/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/jianli/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/jianli/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/jianli/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/jianli/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script> <script>
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/jianli/">
+          杨玉垚
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="展开导航">
+        <span class="sr-only">展开导航</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/jianli/">首页
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/jianli/publications/">论文
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="/jianli/projects/">项目
+                    
+                      <span class="sr-only">（当前页面）</span>
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/jianli/cv/">简历
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+          
+          
+            <!-- Toogle theme mode -->
+            <li class="toggle-container">
+              <button id="light-toggle" title="切换主题">
+                <i class="fa-half-sun-moon" id="light-toggle-system"></i>
+                <i class="fa-solid fa-moon" id="light-toggle-dark"></i>
+                <i class="fa-solid fa-sun" id="light-toggle-light"></i>
+              </button>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">基于 IMU 和 3D 打印的步态解算与智能矫正系统</h1>
+    <p class="post-description">面向可穿戴步态分析，围绕“稳定采集、实时解算、个性化校准、对称性反馈”构建 3D 打印传感鞋与混合算法系统。</p>
+  </header>
+
+  <article>
+    <p>该项目是第一作者论文对应的系统原型，担任主要负责人。项目目标不是单独做一个传感器或一个算法，而是把 3D 打印鞋体、嵌入式 IMU 采集、物理模型解算、少样本个性化校准和移动端反馈串成一条完整链路。</p>
+
+<div class="gait-project-hero">
+  <div>
+    <span class="gait-project-kicker">Project Logic</span>
+    <h2>从稳定采集到个性化反馈的闭环系统</h2>
+    <p>系统先通过 3D 打印结构提升 IMU 信号稳定性，再用 ZUPT 提供可解释的物理基线，最后通过自监督残差网络校正个体误差，并把步态参数转化为对称性评价和鞋体设计反馈。</p>
+  </div>
+  <div class="gait-project-metrics">
+    <div>
+<span>PCC</span><strong>0.848 → 0.913</strong>
+</div>
+    <div>
+<span>步长 MAE</span><strong>2.29 cm</strong>
+</div>
+    <div>
+<span>支撑/摆动相误差</span><strong>21.30 / 21.80 ms</strong>
+</div>
+  </div>
+</div>
+
+<h2 id="1-问题定义">1. 问题定义</h2>
+
+<p>可穿戴 IMU 适合低成本、连续化步态分析，但传统绑带式安装存在两个主要问题：一是传感器与足部之间会发生相对滑动，导致高频振动和信号不稳定；二是每次穿戴角度不完全一致，会影响后续步长、步态事件和时相参数估计。</p>
+
+<p>算法层面，纯物理积分方法可解释性强、运行快，但容易积累漂移；纯深度学习方法可以学习复杂关系，但通常需要大量标注数据。该项目的核心思路是把二者结合：用物理模型给出初始估计，再用少量个人数据进行残差修正。</p>
+
+<div class="project-image-slot">
+  <div class="slot-label">待插图 1</div>
+  <strong>问题与系统总览图</strong>
+  <p>建议放一张“绑带式 IMU 问题 → 3D 打印传感鞋 → 手机端反馈”的流程图，用于解释为什么需要硬件和算法协同设计。</p>
+</div>
+
+<h2 id="2-硬件系统">2. 硬件系统</h2>
+
+<p>硬件部分采用集成式 3D 打印传感鞋。IMU 采集节点被固定在鞋体结构中，减少绑带安装带来的相对滑动；中底采用 gyroid 晶格结构，兼顾支撑、缓冲和机械滤波。系统通过低功耗无线通信把惯性数据传输到移动端，同时保留本地缓存以降低无线传输过程中的数据丢失风险。</p>
+
+<p>这部分的工程价值在于：传感器不再只是“贴在脚上”，而是和鞋体形成稳定耦合。这样后续算法接收到的数据更稳定，物理模型和学习模型都能从更干净的输入中受益。</p>
+
+<div class="project-image-slot">
+  <div class="slot-label">待插图 2</div>
+  <strong>3D 打印传感鞋结构图</strong>
+  <p>建议放鞋体实物、IMU 节点位置、gyroid 晶格、传感节点腔体等图片。重点展示“传感器嵌入鞋体”而不是普通外挂传感器。</p>
+</div>
+
+<h2 id="3-机械滤波与信号质量">3. 机械滤波与信号质量</h2>
+
+<p>为了验证嵌入式结构是否真的改善信号质量，项目将 3D 打印传感鞋与传统绑带式 IMU 进行对比。结果显示，嵌入式结构提高了跨步信号一致性，PCC 从 0.848 提升到 0.913。</p>
+
+<p>频域分析进一步说明，高频残余成分明显减少。三轴平均频谱信噪指标从 3.33 dB 提升到 7.52 dB，高频能量比例从 33.05% 降到 19.06%。这说明鞋体结构不仅是安装载体，也承担了机械低通滤波的作用。</p>
+
+<div class="project-image-slot">
+  <div class="slot-label">待插图 3</div>
+  <strong>信号质量对比图</strong>
+  <p>建议放 3D 打印嵌入式方案与绑带式方案的加速度波形、频谱对比或关键指标柱状图，突出 PCC、频谱信噪指标和高频能量比例变化。</p>
+</div>
+
+<h2 id="4-步态解算算法">4. 步态解算算法</h2>
+
+<p>算法分为两层。第一层是基于 ZUPT 的物理估计：通过姿态解算识别步态周期中的关键事件，利用足部短暂停止的时刻进行零速约束，得到步长、支撑相、摆动相等初始参数。这个部分运行快、可解释，适合作为边缘端实时基线。</p>
+
+<p>第二层是残差校准网络。网络不直接替代物理模型，而是学习物理模型与真实结果之间的偏差。训练流程分为两步：先用未标注 IMU 数据进行自监督预训练，学习通用步态表征；再在少量个人标注数据上冻结编码器，只微调回归头，从而减少小样本过拟合。</p>
+
+<p>最终输出可以理解为：</p>
+
+<p><code class="language-plaintext highlighter-rouge">最终步态参数 = ZUPT 物理估计 + 个性化残差补偿</code></p>
+
+<div class="project-image-slot">
+  <div class="slot-label">待插图 4</div>
+  <strong>混合算法框架图</strong>
+  <p>建议放 ZUPT 基线、自监督预训练、少样本个性化校准、残差补偿输出之间的关系图。这里是项目最需要讲清楚的算法图。</p>
+</div>
+
+<h2 id="5-数据采集与验证">5. 数据采集与验证</h2>
+
+<p>数据分为两类：未标注数据用于学习通用步态特征，覆盖多名受试者和多种行走场景；少量标注数据用于个性化校准，借助足迹测量和高速相机建立步长与步态事件参考值。</p>
+
+<p>实验结果表明，个性化残差补偿可以明显降低物理模型在时相估计上的偏差。平均步长 MAE 为 2.29 cm，支撑相和摆动相时间误差分别控制在 21.30 ms 和 21.80 ms。与只用 ZUPT 相比，混合框架在实时性和精度之间取得了更好的平衡。</p>
+
+<div class="project-image-slot">
+  <div class="slot-label">待插图 5</div>
+  <strong>实验采集与结果图</strong>
+  <p>建议放行走采集场景、足迹测量、高速相机布置、消融实验结果或与其他 IMU 方法的对比表。</p>
+</div>
+
+<h2 id="6-个性化反馈与应用端">6. 个性化反馈与应用端</h2>
+
+<p>项目进一步把步长、支撑相、摆动相等参数转化为对称性指数，用于描述左右步态差异。相比单步结果，多步平均后的对称性评价更稳定，也更适合作为定制化鞋体设计的输入。</p>
+
+<p>移动端部分用于接收传感数据、展示解算结果，并把确定性的步态指标转化为更易理解的反馈文本。系统定位是步态监测和个性化鞋体设计反馈平台，不替代临床诊断。</p>
+
+<div class="project-image-slot">
+  <div class="slot-label">待插图 6</div>
+  <strong>移动端与个性化反馈流程图</strong>
+  <p>建议放 Flutter APP 界面、SI 指标展示、鞋体参数调整逻辑或“采集-分析-反馈-设计”的闭环流程图。</p>
+</div>
+
+<h2 id="7-负责内容">7. 负责内容</h2>
+
+<ul>
+  <li>负责整体系统方案设计，将 3D 打印鞋体、IMU 采集、算法估计和移动端展示组织为完整原型。</li>
+  <li>参与传感鞋结构设计、IMU 数据采集流程、对比实验设计和数据处理。</li>
+  <li>搭建 ZUPT 物理估计与自监督残差校准流程，完成步长和步态时相参数验证。</li>
+  <li>整理实验结果并完成论文写作与返修，第一作者论文已进入 IEEE Sensors Journal 二审阶段。</li>
+  <li>基于该系统参加全国大学生计算机设计大赛，已进入江苏省决赛。</li>
+</ul>
+
+  </article>
+
+  
+    <h2>参考文献</h2>
+    <div class="publications">
+      
+    </div>
+  
+
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+
+
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      
+  © 版权所有 2026 杨玉垚。基于 <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> 与 <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> 主题构建。 之后可部署到 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>。
+
+  
+  
+
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Bootsrap & MDB scripts -->
+<script src="/jianli/assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/jianli/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/jianli/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+
+
+
+<!-- Load Common JS -->
+<script src="/jianli/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/jianli/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script>
+<script defer src="/jianli/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/jianli/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+<!-- Badges -->
+
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+
+  <!-- MathJax -->
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script>
+  
+    <script src="/jianli/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Scrolling Progress Bar -->
+  <script defer src="/jianli/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script>
+
+
+
+
+
+
+
+  <!-- Back to Top -->
+  <script src="/jianli/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script>
+  <script>
     addBackToTop();
-  </script> </body> </html>
+  </script>
+
+
+
+
+
+
+  </body>
+</html>
