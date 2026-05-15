@@ -336,4 +336,88 @@ body.sticky-bottom-footer {
 * Projects
 *****************************************************************************/
 
-// TODO: redefine projects layout.
+.gait-project-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(220px, 0.8fr);
+  gap: 1rem;
+  margin: 1rem 0 1.6rem;
+  padding: 1.15rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-bg-color);
+
+  h2 {
+    margin: 0.2rem 0 0.65rem;
+    font-size: 1.45rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.gait-project-kicker {
+  display: block;
+  color: var(--global-theme-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gait-project-metrics {
+  display: grid;
+  gap: 0.65rem;
+
+  div {
+    padding: 0.75rem 0.8rem;
+    border-left: 3px solid var(--global-theme-color);
+    background: var(--global-card-bg-color);
+  }
+
+  span {
+    display: block;
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+  }
+
+  strong {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--global-text-color);
+    font-size: 1.05rem;
+  }
+}
+
+.project-image-slot {
+  margin: 1.15rem 0 1.45rem;
+  padding: 1rem 1.1rem;
+  border: 1px dashed var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+
+  .slot-label {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+    color: var(--global-theme-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gait-project-hero {
+    grid-template-columns: 1fr;
+  }
+}

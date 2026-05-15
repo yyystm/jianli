@@ -2,13 +2,13 @@
 layout: page
 title: 项目
 permalink: /projects/
-description: 仅保留两项最能代表当前研究与工程能力的项目。
+description: 当前重点展示步态解算与智能矫正系统这一项代表性项目。
 nav: true
 nav_order: 2
 horizontal: true
 ---
 
-目前项目页只保留两张代表性卡片。这个数量对你现在的阶段更合适：内容集中，信息密度高，也不会因为模板占位或较弱项目影响整体判断。
+当前项目页只保留一项主线最清晰、材料最完整的代表性项目。其他经历仍保留在首页和简历页中，项目页用于集中展示步态系统的完整逻辑。
 
 <!-- pages/projects.md -->
 <div class="projects">

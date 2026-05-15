@@ -5,7 +5,7 @@ description: 国家级大创项目，围绕 DMHNN 建模、混沌动力学分析
 img: assets/img/publication_preview/memristive-hopfield-study-structure.png
 importance: 2
 category: 项目
-featured_project: true
+featured_project: false
 ---
 
 该项目是当前阶段第二项较完整的研究型工程项目，对应二作 SCI 论文与国家级大创经历，担任第二负责人。
