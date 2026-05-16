@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-项目",
           title: "项目",
-          description: "当前重点展示步态解算与智能矫正系统这一项代表性项目。",
+          description: "基于 IMU 和 3D 打印的步态解算与智能矫正系统",
           section: "Navigation",
           handler: () => {
             window.location.href = "/jianli/projects/";
