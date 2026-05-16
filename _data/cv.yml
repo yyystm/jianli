@@ -85,7 +85,7 @@ cv:
         image: /assets/img/awards/academic-forum-award.jpg
 
     项目经历:
-      - name: 基于 IMU 和 3D 打印的步态解算与智能矫正系统
+      - name: 面向运动健康监测的可穿戴步态感知与智能分析系统
         summary: 面向可穿戴步态分析，设计集成 IMU 的 3D 打印机械滤波传感鞋，并构建“嵌入式采集 + BLE 传输 + 个性化步态解算 + 移动端展示 + 云端分析”的完整系统，担任主要负责人。
         highlights:
           - 硬件与通信：以 ESP32-S3 为主控，实现 IMU 数据采集与 BLE 低功耗无线传输。

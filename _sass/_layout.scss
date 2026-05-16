@@ -474,7 +474,7 @@ body.sticky-bottom-footer {
 
 .gait-hero-figure,
 .gait-wide-figure,
-.gait-image-pair figure {
+.gait-project-page figure {
   margin: 1rem 0 0;
   overflow: hidden;
   border: 1px solid var(--global-divider-color);
@@ -510,14 +510,6 @@ body.sticky-bottom-footer {
     object-fit: contain;
     background: var(--global-card-bg-color);
   }
-}
-
-.gait-image-pair {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
-  align-items: start;
-  margin: 1rem 0 0.4rem;
 }
 
 .gait-section-lead {
@@ -725,6 +717,50 @@ body.sticky-bottom-footer {
   }
 }
 
+.gait-table-wrap {
+  margin: 1rem 0;
+  overflow-x: auto;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+}
+
+.gait-data-table {
+  width: 100%;
+  min-width: 720px;
+  margin: 0;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.62rem 0.75rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    font-size: 0.86rem;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  th {
+    color: var(--global-text-color);
+    font-weight: 700;
+    background: color-mix(in srgb, var(--global-theme-color) 6%, var(--global-bg-color));
+  }
+
+  tbody tr:last-child td {
+    border-bottom: 0;
+    font-weight: 700;
+  }
+}
+
+.gait-table-caption {
+  margin: 0;
+  padding: 0.58rem 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
 .gait-figure-slot {
   min-height: 145px;
   padding: 0.9rem 1rem;
@@ -764,7 +800,6 @@ body.sticky-bottom-footer {
 @media (max-width: 992px) {
   .project-showcase,
   .gait-case-hero,
-  .gait-image-pair,
   .gait-pipeline {
     grid-template-columns: 1fr;
   }

@@ -2,7 +2,7 @@
 layout: page
 title: 项目
 permalink: /projects/
-description: 基于 IMU 和 3D 打印的步态解算与智能矫正系统
+description: 面向运动健康监测的可穿戴步态感知与智能分析系统
 nav: true
 nav_order: 2
 ---
