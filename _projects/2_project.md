@@ -14,7 +14,7 @@ related_publications: true
     <p class="gait-case-eyebrow">Research Prototype / Wearable Gait Analysis</p>
     <div class="gait-case-hero">
       <p class="gait-case-lead">
-        该项目是第一作者论文对应的系统原型，目标是把传感鞋硬件、IMU 数据采集、物理模型解算、少样本个性化校准和移动端反馈连成一套可验证的步态分析流程。项目重点在于“硬件先提升信号质量，算法再做实时估计和个体校正”，而不是孤立展示某一个传感器或模型。
+        围绕可穿戴步态分析中的信号稳定性、实时解算和个体差异问题，系统集成 3D 打印传感鞋、IMU 数据采集、ZUPT 物理估计、自监督残差校准和移动端反馈。整体思路是先通过鞋体结构改善传感质量，再结合物理模型与学习模型完成步态参数估计。
       </p>
       <figure class="gait-case-visual">
         <img src="{{ '/assets/img/publication_preview/gait-shoe-graphical-abstract.png' | relative_url }}" alt="3D 打印传感鞋与步态解算系统图">
@@ -136,45 +136,6 @@ related_publications: true
   <section class="gait-section">
     <div class="gait-section-heading">
       <span>05</span>
-      <h2>建议补充图片</h2>
-    </div>
-    <div class="gait-figure-grid">
-      <div class="gait-figure-slot">
-        <span>Fig. 01</span>
-        <strong>系统总览</strong>
-        <p>放“传感鞋采集 → 算法解算 → 移动端反馈”的整体流程图。</p>
-      </div>
-      <div class="gait-figure-slot">
-        <span>Fig. 02</span>
-        <strong>鞋体结构</strong>
-        <p>放实物鞋、IMU 安装位置、gyroid 晶格和传感节点腔体。</p>
-      </div>
-      <div class="gait-figure-slot">
-        <span>Fig. 03</span>
-        <strong>信号对比</strong>
-        <p>放嵌入式方案与绑带式方案的波形、频谱或关键指标图。</p>
-      </div>
-      <div class="gait-figure-slot">
-        <span>Fig. 04</span>
-        <strong>算法框架</strong>
-        <p>放 ZUPT、预训练、少样本校准和残差输出之间的关系图。</p>
-      </div>
-      <div class="gait-figure-slot">
-        <span>Fig. 05</span>
-        <strong>实验采集</strong>
-        <p>放行走采集场景、足迹测量或高速相机参考系统。</p>
-      </div>
-      <div class="gait-figure-slot">
-        <span>Fig. 06</span>
-        <strong>移动端反馈</strong>
-        <p>放 APP 界面、对称性指数展示或鞋体设计反馈流程。</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="gait-section">
-    <div class="gait-section-heading">
-      <span>06</span>
       <h2>个人负责内容</h2>
     </div>
     <ul class="gait-responsibility-list">
