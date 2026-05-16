@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-项目",
           title: "项目",
-          description: "基于 IMU 和 3D 打印的步态解算与智能矫正系统",
+          description: "面向运动健康监测的可穿戴步态感知与智能分析系统",
           section: "Navigation",
           handler: () => {
             window.location.href = "/jianli/projects/";
@@ -392,8 +392,8 @@ ninja.data = [{
           description: "用一句话概括比赛题目、解决方案和最终结果。",
           section: "Projects",handler: () => {
               window.location.href = "/jianli/projects/1_project/";
-            },},{id: "projects-基于-imu-和-3d-打印的步态解算与智能矫正系统",
-          title: '基于 IMU 和 3D 打印的步态解算与智能矫正系统',
+            },},{id: "projects-面向运动健康监测的可穿戴步态感知与智能分析系统",
+          title: '面向运动健康监测的可穿戴步态感知与智能分析系统',
           description: "面向可穿戴步态分析，围绕“稳定采集、实时解算、个性化校准、对称性反馈”构建 3D 打印传感鞋与混合算法系统。",
           section: "Projects",handler: () => {
               window.location.href = "/jianli/projects/2_project/";

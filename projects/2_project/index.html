@@ -17,7 +17,7 @@
   
   
     
-      基于 IMU 和 3D 打印的步态解算与智能矫正系统 | 杨玉垚
+      面向运动健康监测的可穿戴步态感知与智能分析系统 | 杨玉垚
     
   
 </title>
@@ -64,7 +64,7 @@
 
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
 
-<link rel="stylesheet" href="/jianli/assets/css/main.css?v=1778913832">
+<link rel="stylesheet" href="/jianli/assets/css/main.css?v=1778914886">
 <link rel="canonical" href="https://yyystm.github.io/jianli/projects/2_project/">
 
 
@@ -317,7 +317,7 @@
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">基于 IMU 和 3D 打印的步态解算与智能矫正系统</h1>
+    <h1 class="post-title">面向运动健康监测的可穿戴步态感知与智能分析系统</h1>
     <p class="post-description">面向可穿戴步态分析，围绕“稳定采集、实时解算、个性化校准、对称性反馈”构建 3D 打印传感鞋与混合算法系统。</p>
   </header>
 
@@ -325,7 +325,7 @@
     <div class="gait-project-page">
   <section class="gait-full-hero">
     <p class="gait-case-eyebrow">Wearable Gait Analysis / 3D-Printed Sensing Shoe</p>
-    <h2>基于 IMU 和 3D 打印的步态解算与智能矫正系统</h2>
+    <h2>面向运动健康监测的可穿戴步态感知与智能分析系统</h2>
     <p class="gait-case-lead">
       面向可穿戴步态分析中的信号稳定性、实时解算和个体差异问题，系统集成 3D 打印传感鞋、嵌入式 IMU 采集、ZUPT 物理估计、自监督残差校准和移动端反馈。硬件侧通过鞋体结构提升传感稳定性，算法侧结合物理模型与少样本学习完成步长、支撑相和摆动相估计。
     </p>
@@ -379,16 +379,10 @@
       <img src="/jianli/assets/img/projects/gait/system-architecture.png" alt="3D 打印传感鞋系统架构">
       <figcaption>系统由鞋内传感节点和移动端组成。传感节点负责 IMU 数据采集、缓存与蓝牙传输，移动端完成数据记录、混合算法计算和反馈展示。</figcaption>
     </figure>
-    <div class="gait-image-pair">
-      <figure>
-        <img src="/jianli/assets/img/projects/gait/shoe-lattice.jpg" alt="3D 打印 gyroid 晶格传感鞋">
-        <figcaption>3D 打印 gyroid 晶格鞋体。IMU 节点嵌入鞋体结构，减少外挂安装带来的相对滑动。</figcaption>
-      </figure>
-      <figure>
-        <img src="/jianli/assets/img/projects/gait/sensing-node.png" alt="IMU 传感节点和 PCB 结构">
-        <figcaption>传感节点包含 IMU、磁力计、蓝牙 MCU、本地存储和无线充电模块，支持封闭式嵌入。</figcaption>
-      </figure>
-    </div>
+    <figure class="gait-wide-figure">
+      <img src="/jianli/assets/img/projects/gait/hardware-implementation.png" alt="3D 打印传感鞋硬件实现">
+      <figcaption>硬件实现：3D 打印 gyroid 晶格鞋体、封装传感节点和 PCB 结构。IMU 节点嵌入鞋体结构，减少外挂安装带来的相对滑动。</figcaption>
+    </figure>
   </section>
 
   <section class="gait-section">
@@ -399,15 +393,57 @@
     <p class="gait-section-lead">
       鞋体并不只是传感器载体。gyroid 晶格结构在支撑和缓冲的同时，对绑带方案常见的高频振动起到机械低通滤波作用，使后续算法获得更稳定的输入。
     </p>
-    <div class="gait-image-pair">
-      <figure>
-        <img src="/jianli/assets/img/projects/gait/signal-waveforms.svg" alt="嵌入式传感鞋与绑带式传感器的加速度波形对比">
-        <figcaption>时域波形对比：嵌入式传感鞋的跨步周期更稳定，绑带式信号包含更多不规则抖动。</figcaption>
-      </figure>
-      <figure>
-        <img src="/jianli/assets/img/projects/gait/spectral-analysis.svg" alt="加速度信号频谱特征对比">
-        <figcaption>频域对比：嵌入式方案的能量更集中于正常步行主频段，高频残余成分更少。</figcaption>
-      </figure>
+    <figure class="gait-wide-figure">
+      <img src="/jianli/assets/img/projects/gait/signal-waveforms.svg" alt="嵌入式传感鞋与绑带式传感器的加速度波形对比">
+      <figcaption>时域波形对比：嵌入式传感鞋的跨步周期更稳定，绑带式信号包含更多不规则抖动。</figcaption>
+    </figure>
+    <figure class="gait-wide-figure">
+      <img src="/jianli/assets/img/projects/gait/spectral-analysis.svg" alt="加速度信号频谱特征对比">
+      <figcaption>频域对比：嵌入式方案的能量更集中于正常步行主频段，高频残余成分更少。</figcaption>
+    </figure>
+    <div class="gait-table-wrap">
+      <table class="gait-data-table">
+        <thead>
+          <tr>
+            <th>轴向</th>
+            <th>3D 传感鞋 SNR<sub>spectral</sub> (dB)</th>
+            <th>3D 传感鞋 HFER (%)</th>
+            <th>绑带式 SNR<sub>spectral</sub> (dB)</th>
+            <th>绑带式 HFER (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Acc-X</td>
+            <td>12.60 ± 0.76</td>
+            <td>5.28 ± 0.85</td>
+            <td>5.99 ± 1.46</td>
+            <td>20.65 ± 5.25</td>
+          </tr>
+          <tr>
+            <td>Acc-Y</td>
+            <td>2.50 ± 1.61</td>
+            <td>36.42 ± 8.22</td>
+            <td>0.79 ± 2.28</td>
+            <td>45.89 ± 11.96</td>
+          </tr>
+          <tr>
+            <td>Acc-Z</td>
+            <td>7.46 ± 1.07</td>
+            <td>15.49 ± 3.29</td>
+            <td>3.20 ± 1.09</td>
+            <td>32.61 ± 5.23</td>
+          </tr>
+          <tr>
+            <td>平均</td>
+            <td>7.52 ± 0.69</td>
+            <td>19.06 ± 3.01</td>
+            <td>3.33 ± 1.08</td>
+            <td>33.05 ± 5.06</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="gait-table-caption">频域信号质量对比：嵌入式传感鞋提高低频有效步态信号占比，并降低 10-20 Hz 高频残余能量。</p>
     </div>
     <div class="gait-result-list">
       <p><strong>跨步一致性：</strong>PCC 从绑带式方案的 0.848 提升至嵌入式传感鞋的 0.913。</p>
@@ -459,6 +495,10 @@
       <img src="/jianli/assets/img/projects/gait/gait-events.png" alt="足部俯仰角波形和步态事件识别">
       <figcaption>步态事件识别：由足部角度波形确定 heel strike、toe off 和 foot-flat 时刻，为 ZUPT 与时相估计提供基础。</figcaption>
     </figure>
+    <figure class="gait-wide-figure">
+      <img src="/jianli/assets/img/projects/gait/foot-trajectory.svg" alt="足部运动轨迹重建">
+      <figcaption>足部轨迹重建：基于 IMU 姿态和 ZUPT 约束恢复足部在矢状面与水平面的运动轨迹，为步长估计提供空间信息。</figcaption>
+    </figure>
   </section>
 
   <section class="gait-section">
@@ -495,16 +535,14 @@
       <span>06</span>
       <h2>反馈与个性化设计</h2>
     </div>
-    <div class="gait-image-pair">
-      <figure>
-        <img src="/jianli/assets/img/projects/gait/symmetry-index.svg" alt="步态对称性指数分析">
-        <figcaption>对称性指数分析：多步平均比单步结果更稳定，可用于描述左右步态差异。</figcaption>
-      </figure>
-      <figure>
-        <img src="/jianli/assets/img/projects/gait/mobile-feedback.jpg" alt="移动端反馈和个性化 3D 打印流程">
-        <figcaption>移动端反馈：将确定性的步态参数和 SI 指标转化为可读反馈，并连接到 3D 打印鞋体参数调整流程。</figcaption>
-      </figure>
-    </div>
+    <figure class="gait-wide-figure">
+      <img src="/jianli/assets/img/projects/gait/symmetry-index.svg" alt="步态对称性指数分析">
+      <figcaption>对称性指数分析：多步平均比单步结果更稳定，可用于描述左右步态差异。</figcaption>
+    </figure>
+    <figure class="gait-wide-figure">
+      <img src="/jianli/assets/img/projects/gait/mobile-feedback.jpg" alt="移动端反馈和个性化 3D 打印流程">
+      <figcaption>移动端反馈：将确定性的步态参数和 SI 指标转化为可读反馈，并连接到 3D 打印鞋体参数调整流程。</figcaption>
+    </figure>
   </section>
 
   <section class="gait-section">
@@ -525,11 +563,6 @@
 
   </article>
 
-  
-    <h2>参考文献</h2>
-    <div class="publications">
-      
-    </div>
   
 
   
